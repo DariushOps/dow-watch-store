@@ -1,9 +1,18 @@
 @import "tailwindcss";
 
+@layer base {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    @apply bg-slate-900 text-gray-100 font-normal;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -11,8 +20,14 @@
   }
 }
 
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
 @theme {
-  --font-montserrat: [ "Montserrat Alternates", sans-serif];
-  --font-lato: [ "Lato", sans-serif];
+  --font-montserrat: "Montserrat Alternates", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-dancing: "Dancing Script", sans-serif;
+  --font-pacifico: "Pacifico", cursive;
   --animate-fadeIn: fadeIn 0.7s ease-in-out forwards;
 }

@@ -4,10 +4,10 @@ import { PiShoppingBagOpenFill } from "react-icons/pi";
 function CartIcon({ count }) {
   return (
     <div className="relative">
-      <PiShoppingBagOpenFill className="w-8 h-8 text-shadow-white" />
+      <PiShoppingBagOpenFill className="w-7 h-7 text-gray-200" />
 
       {count > 0 && (
-        <span className="absolute -top-2 -right-2 bg-red-700 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+        <span className="absolute -top-2 -right-2 bg-emerald-800 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
           {count}
         </span>
       )}
@@ -16,14 +16,15 @@ function CartIcon({ count }) {
 }
 
 export default function Navbar() {
-  const linkClasses = `hover:scale-120 transition-all duration-300 backface-hidden`;
+  const linkClasses = `hover:text-amber-400/90 transition-color duration-500 backface-hidden `;
   return (
-    <nav className="flex fixed top-0 left-0 right-0 font-montserrat font-medium text-stone-50  justify-between bg-linear-to-br from-emerald-800 to-cyan-800 shadow-lg p-6 ">
-      <div className="flex items-center justify-center  gap-2 text-2xl animate-fadeIn ">
-        <img src="logo.svg" alt="logo page" className="w-full h-8" />
-        <h3>DariushOps</h3>
+    <nav className="flex fixed top-0 left-0 right-0 text-3xl font-montserrat font-semibold justify-between py-16 px-12 z-30 bg-transparent uppercase">
+      <div className="flex items-center justify-center  pl-2 text-5xl animate-fadeIn ">
+        <Link className="text-3xl font-semibold text-amber-400 font-dancing">
+          DariushOps
+        </Link>
       </div>
-      <div className="flex items-center justify-center gap-4  animate-fadeIn  ">
+      <div className="flex items-center justify-center gap-16  animate-fadeIn ml-28">
         <NavLink className={linkClasses} to="/">
           Home
         </NavLink>
@@ -39,8 +40,12 @@ export default function Navbar() {
       </div>
       <div className="flex items-center justify-center  gap-5 animate-fadeIn">
         <CartIcon count={2} />
-        <Link to="login">Log In</Link>
-        <Link to="signup">Sign Up</Link>
+        <Link className="hover:text-amber-400/90 duration-500" to="login">
+          Log In
+        </Link>
+        <Link className="hover:text-amber-400/90 duration-500" to="signup">
+          Sign Up
+        </Link>
       </div>
     </nav>
   );
