@@ -1,8 +1,8 @@
 export default function IntroSection() {
   return (
-    <section className="py-60 px-36 items-center  flex gap-20">
+    <section className="py-40 px-36 items-center  flex gap-20">
       <div className="flex w-[50%] justify-center">
-        <h2 className="font-cormorant text-gray-200 hover:text-amber-500 hover:scale-105 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5rem] font-light mb-0 leading-snug">
+        <h2 className="header-secondary">
           Luxury Watches, <br />
           Crafted for You
         </h2>

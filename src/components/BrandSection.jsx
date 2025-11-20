@@ -1,6 +1,6 @@
 import Rolex from "../assets/watchPic/7.webp";
 import Omega from "../assets/watchPic/12.webp";
-import Seiko from "../assets/watchPic/16.webp";
+import Seiko from "../assets/watchPic/21.webp";
 import Breitling from "../assets/watchPic/3.webp";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -18,11 +18,11 @@ export default function BrandSection() {
           }}
           className="flex gap-0 h-180 items-center justify-center w-full overflow-hidden"
         >
-          <div className="flex w-[50%]">
+          <div className="flex w-[50%] group overflow-hidden">
             <img
               src={Rolex}
               alt="Watch pic"
-              className="h-full block object-cover object-center opacity-85 hover:opacity-60 transition-all duration-600 cursor-pointer "
+              className="h-full w-full object-cover scale-105 object-center opacity-85 hover:opacity-60 hover:scale-100 transition-all duration-600 cursor-pointer "
             />
           </div>
           <div className="flex w-[50%] px-10 flex-col gap-16 ">
@@ -105,11 +105,11 @@ export default function BrandSection() {
               </motion.span>
             </Link>
           </div>
-          <div className="flex w-[50%] overflow-hidden">
+          <div className="flex w-[50%] group overflow-hidden">
             <img
               src={Omega}
               alt="Watch pic"
-              className="h-full  block object-cover object-center opacity-85 hover:opacity-60 transition-all duration-600 cursor-pointer"
+              className="h-full  block object-cover object-center opacity-85 hover:opacity-60 scale-105 hover:scale-100 transition-all duration-600 cursor-pointer"
             />
           </div>
         </motion.div>
@@ -120,11 +120,11 @@ export default function BrandSection() {
           transition={{ duration: 2, type: "spring" }}
           className="flex gap-0 h-180 items-center justify-center w-full overflow-hidden"
         >
-          <div className="flex w-[50%] h-full">
+          <div className="flex w-[50%] group overflow-hidden">
             <img
               src={Seiko}
               alt="Watch pic"
-              className="h-full block object-cover object-center opacity-85 hover:opacity-60 transition-all duration-600 cursor-pointer"
+              className="h-full w-full object-cover object-center opacity-85 hover:opacity-60 transition-all duration-600 scale-105 hover:scale-100 cursor-pointer"
             />
           </div>
           <div className="flex w-[50%] px-10 flex-col gap-16">
@@ -207,11 +207,11 @@ export default function BrandSection() {
               </motion.span>
             </Link>
           </div>
-          <div className="flex w-[50%]">
+          <div className="flex w-[50%] group overflow-hidden">
             <img
               src={Breitling}
               alt="Watch pic"
-              className="h-full block object-cover object-center opacity-85 hover:opacity-60 transition-all duration-600 cursor-pointer"
+              className="h-full block object-cover object-center opacity-85 hover:opacity-60 transition-all duration-600 scale-105 hover:scale-100 cursor-pointer"
             />
           </div>
         </motion.div>

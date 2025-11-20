@@ -1,4 +1,5 @@
 import BrandSection from "../components/BrandSection";
+import CartSection from "../components/CartSection";
 import IntroSection from "../components/IntroSection";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <IntroSection />
       <BrandSection />
+      <CartSection />
     </main>
   );
 }
