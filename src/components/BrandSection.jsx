@@ -43,6 +43,7 @@ export default function BrandSection() {
               <motion.span
                 className=" flex mx-auto justify-center items-center w-70 h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.8rem] font-lato font-semibold"
                 whileHover={{
+                  borderRadius: "10px",
                   color: "#e5e7eb",
                   backgroundColor: "#fe9a0099",
                   boxShadow: "0 0 12px rgba(255,255,255,0.15)",
@@ -86,6 +87,7 @@ export default function BrandSection() {
               <motion.span
                 className=" flex mx-auto justify-center items-center w-70 h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.8rem] font-lato font-semibold"
                 whileHover={{
+                  borderRadius: "10px",
                   color: "#e5e7eb",
                   backgroundColor: "#fe9a0099",
                   boxShadow: "0 0 12px rgba(255,255,255,0.15)",
@@ -143,6 +145,7 @@ export default function BrandSection() {
               <motion.span
                 className=" flex mx-auto justify-center items-center w-70 h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.8rem] font-lato font-semibold"
                 whileHover={{
+                  borderRadius: "10px",
                   color: "#e5e7eb",
                   backgroundColor: "#fe9a0099",
                   boxShadow: "0 0 12px rgba(255,255,255,0.15)",
@@ -186,6 +189,7 @@ export default function BrandSection() {
               <motion.span
                 className=" flex mx-auto justify-center items-center w-70 h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.8rem] font-lato font-semibold"
                 whileHover={{
+                  borderRadius: "10px",
                   color: "#e5e7eb",
                   backgroundColor: "#fe9a0099",
                   boxShadow: "0 0 12px rgba(255,255,255,0.15)",
@@ -207,7 +211,7 @@ export default function BrandSection() {
             <img
               src={Breitling}
               alt="Watch pic"
-              className="h-full  block object-cover object-center opacity-85 hover:opacity-60 transition-all duration-600 cursor-pointer"
+              className="h-full block object-cover object-center opacity-85 hover:opacity-60 transition-all duration-600 cursor-pointer"
             />
           </div>
         </motion.div>

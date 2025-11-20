@@ -31,7 +31,7 @@ export default function CoverSlideshow() {
           alt={image.alt}
           className={`absolute top-0 left-0 w-full h-screen object-cover transition-opacity backface-hidden duration-2500
             ${
-              index === currentImageIndex ? "opacity-35 z-10" : "opacity-0 z-0"
+              index === currentImageIndex ? "opacity-45 z-10" : "opacity-0 z-0"
             }`}
         />
       ))}
