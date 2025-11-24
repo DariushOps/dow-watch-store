@@ -56,7 +56,7 @@ export default function ConsultSection() {
         ref={ref}
         initial="hidden"
         animate={controls}
-        className="flex w-full bg-slate-900/35 overflow-hidden"
+        className="flex w-full bg-slate-900/30 overflow-hidden"
       >
         <motion.div
           variants={leftVariant}
