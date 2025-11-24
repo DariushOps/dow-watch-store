@@ -28,7 +28,7 @@ const rightVariant = {
 export default function ConsultSection() {
   const ref = useRef(null);
   const controls = useAnimation();
-  const isInView = useInView(ref, { amount: 0.3 });
+  const isInView = useInView(ref, { amount: 0.4 });
 
   useEffect(() => {
     if (isInView) {
@@ -40,9 +40,18 @@ export default function ConsultSection() {
 
   return (
     <section className="py-40">
-      <div className="flex justify-center items-center pb-45">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{
+          duration: 2,
+          type: "spring",
+        }}
+        className="flex justify-center items-center pb-45"
+      >
         <h2 className="header-secondary">Consult with Experts</h2>
-      </div>
+      </motion.div>
       <motion.div
         ref={ref}
         initial="hidden"

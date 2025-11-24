@@ -22,11 +22,20 @@ const child = {
 export default function CartSection() {
   return (
     <section>
-      <div className="flex justify-center items-center py-30">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{
+          duration: 2,
+          type: "spring",
+        }}
+        className="flex justify-center items-center py-30"
+      >
         <h2 className="header-secondary py-10">
           Style, Precision & Confidence
         </h2>
-      </div>
+      </motion.div>
       <motion.div
         className="flex w-[80%] justify-center mx-auto items-center gap-4 my-5"
         variants={parent}
