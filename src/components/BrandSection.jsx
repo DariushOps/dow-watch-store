@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function BrandSection() {
   return (
     <section>
-      <div className="w-full bg-slate-900">
+      <div className="w-full bg-slate-900/35">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -26,7 +26,7 @@ export default function BrandSection() {
             />
           </div>
           <div className="flex w-[50%] px-10 flex-col gap-16 ">
-            <h2 className="block w-[30%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5.5rem] font-light uppercase">
+            <h2 className="block w-[30%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5.2rem] font-light uppercase">
               Rolex
             </h2>
             <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-center">
@@ -70,7 +70,7 @@ export default function BrandSection() {
           className="flex gap-0 h-180 items-center justify-center w-full overflow-hidden"
         >
           <div className="flex w-[50%] px-10 flex-col gap-16">
-            <h2 className="block w-[30%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5.5rem] font-light uppercase">
+            <h2 className="block w-[30%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5.2rem] font-light uppercase">
               Omega
             </h2>
             <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-center">
@@ -109,7 +109,7 @@ export default function BrandSection() {
             <img
               src={Omega}
               alt="Watch pic"
-              className="h-full  block object-cover object-center opacity-85 hover:opacity-60 scale-105 hover:scale-100 transition-all duration-600 cursor-pointer"
+              className="h-full  block object-cover object-center opacity-85 hover:opacity-60 scale-105 hover:scale-100 transition-all transform-gpu duration-600 cursor-pointer"
             />
           </div>
         </motion.div>
@@ -128,7 +128,7 @@ export default function BrandSection() {
             />
           </div>
           <div className="flex w-[50%] px-10 flex-col gap-16">
-            <h2 className="block w-[30%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5.5rem] font-light uppercase">
+            <h2 className="block w-[30%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5.2rem] font-light uppercase">
               Seiko
             </h2>
             <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-center">
@@ -172,7 +172,7 @@ export default function BrandSection() {
           className="flex gap-0 h-180 items-center justify-center w-full overflow-hidden"
         >
           <div className="flex w-[50%] px-10 flex-col gap-20">
-            <h2 className="block w-[50%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5.5rem] font-light uppercase">
+            <h2 className="block w-[50%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5.2rem] font-light uppercase">
               Breitling
             </h2>
             <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-center">

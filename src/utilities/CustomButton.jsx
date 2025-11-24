@@ -5,7 +5,7 @@ export default function CustomButton() {
   return (
     <Link
       to="shop"
-      className="flex absolute bottom-18 left-1/2 -translate-x-1/2 justify-center items-center w-60 opacity-0 translate-y-10 transition-all duration-600
+      className="flex absolute bottom-18 left-1/2 -translate-x-1/2 justify-center items-center w-60 opacity-0 translate-y-10 transition-all duration-500
       group-hover:opacity-100 group-hover:translate-y-0"
     >
       <motion.span

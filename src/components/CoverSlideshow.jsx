@@ -17,7 +17,7 @@ export default function CoverSlideshow() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));
-    }, 8000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, []);
