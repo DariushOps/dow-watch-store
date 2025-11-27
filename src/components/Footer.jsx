@@ -6,27 +6,55 @@ export default function Footer() {
   return (
     <footer>
       <section className="h-175 w-full">
-        <div className=" flex w-full h-150 bg-slate-900/60 flex-col">
+        <div className=" flex w-full h-150 bg-slate-900/60 flex-col gap-10">
           <div className="flex w-full h-[35%] justify-center items-end">
             <Link>
-              <h2 className="font-greatVibes text-[4.5rem] font-semibold text-center">
+              <h2 className="font-greatVibes text-[4.5rem] font-semibold text-center hover:text-amber-400/80 duration-500 transition-colors">
                 DOW
               </h2>
             </Link>
           </div>
-          <div className="flex w-[90%] mx-auto gap-10">
-            <div className="flex flex-col w-1/2 h-[65%] items-center justify-center py-8">
+          <div className="flex w-[85%] mx-auto ">
+            <div className="flex flex-col w-[30%] h-full items-center justify-start py-8">
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-cinzel">
-                Follow us
+                About us
               </h3>
-              <hr className="text-gray-200 border-t w-[60%] mx-auto my-6 opacity-50" />
+              <hr className="text-gray-200 border-t w-[90%] mx-auto my-6 opacity-50" />
+              <div className="flex items-center justify-center w-[80%] mx-auto">
+                <p className="font-lato text-[1rem] md:text-xl lg:text-2xl text-center">
+                  DOW brings you premium watches that combine timeless design,
+                  exceptional precision, and lasting quality.
+                </p>
+              </div>
             </div>
-            <div className="flex flex-col w-1/2 h-[65%] items-center justify-center py-8">
+            <div className="flex flex-col w-[40%] h-full items-center justify-start py-8">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-cinzel text-gray-100">
+                Features
+              </h3>
+              <hr className="text-gray-200 border-t w-[90%] mx-auto my-6 opacity-50" />
+              <div className="flex gap-7 text-xl md:text-2xl lg:text-3xl capitalize font-lato italic text-gray-300 justify-center items-center">
+                {[
+                  "career",
+                  "brand identify",
+                  "investment",
+                  "agency partner",
+                ].map((text) => (
+                  <Link
+                    key={text}
+                    className="relative flex items-center justify-center cursor-pointer group py-1"
+                  >
+                    {text}
+                    <span className="absolute left-0 -bottom-2 w-full h-px pt-1 bg-amber-400/80 scale-x-0 origin-left transition-transform duration-700 group-hover:scale-x-100"></span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="flex flex-col w-[30%] h-full items-center justify-start py-8">
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-cinzel">
                 Follow us
               </h3>
-              <hr className="text-gray-200 border-t w-[60%] mx-auto my-6 opacity-50" />
-              <div className="flex gap-5 text-[2.2rem] text-gray-300">
+              <hr className="text-gray-200 border-t w-[90%] mx-auto my-6 opacity-50" />
+              <div className="flex gap-5 text-[2.2rem] text-gray-300 justify-center items-center">
                 <Link className="w-17 h-17 flex items-center justify-center border border-amber-400/80 rounded-md text-gray-100 hover:bg-amber-300/70 hover:shadow-md hover:shadow-amber-200/30 transition-all duration-300">
                   <FaInstagram />
                 </Link>
