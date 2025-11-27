@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function BrandSection() {
   return (
     <section>
-      <div className="w-full bg-slate-900/35">
+      <div className="w-full bg-slate-900/60">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}

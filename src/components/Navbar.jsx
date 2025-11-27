@@ -39,18 +39,18 @@ export default function Navbar() {
   return (
     <nav
       className={`
-    fixed top-0 left-0 right-0 z-50 flex justify-between items-center uppercase font-montserrat text-[1.8rem] px-12
-    transition-all duration-600 ease-in-out
+    fixed top-0 left-0 right-0 z-100 flex justify-between items-center uppercase font-montserrat text-[1.8rem] px-12
+    transition-all duration-500 ease-in-out
     ${
       fixed
-        ? "bg-slate-900/70 backdrop-blur-lg shadow-lg py-8"
+        ? "bg-slate-900/70 backdrop-blur-lg shadow-lg py-6"
         : "bg-transparent py-12"
     }
   `}
     >
       <div className="flex items-center justify-center pl-2">
-        <Link className="text-[2rem] font-semibold text-amber-500/90 hover:text-amber-400 transition-colors duration-500 font-cormorant text-center">
-          DariushOps
+        <Link className="text-[2.8rem] font-semibold text-amber-500/90 hover:text-amber-400 transition-colors duration-500 font-greatVibes capitalize text-center">
+          DOW
         </Link>
       </div>
 

@@ -39,7 +39,7 @@ export default function ConsultSection() {
   }, [isInView, controls]);
 
   return (
-    <section className="py-40">
+    <section className="py-35">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ export default function ConsultSection() {
         ref={ref}
         initial="hidden"
         animate={controls}
-        className="flex w-full bg-slate-900/30 overflow-hidden"
+        className="flex w-full bg-slate-900/60 overflow-hidden"
       >
         <motion.div
           variants={leftVariant}

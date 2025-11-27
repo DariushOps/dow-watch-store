@@ -13,7 +13,7 @@ export default function TestimonialSection() {
     const interval = setInterval(() => {
       setDirection(1);
       setIndex((index + 1) % slides);
-    }, 6000);
+    }, 6300);
 
     return () => clearInterval(interval);
   }, [index]);
@@ -32,16 +32,16 @@ export default function TestimonialSection() {
 
   const cartVariants = {
     hidden: (dir) => ({ opacity: 0, x: -40 * dir }),
-    show: { opacity: 1, x: 0, transition: { duration: 0.6 } },
+    show: { opacity: 1, x: 0, transition: { duration: 0.7 } },
     exit: (dir) => ({
       opacity: 0,
       x: 40 * dir,
-      transition: { duration: 0.6 },
+      transition: { duration: 0.7 },
     }),
   };
 
   return (
-    <section className="py-20">
+    <section className="pt-10">
       <div className="relative w-full h-140">
         <img
           src={ImgBg}
