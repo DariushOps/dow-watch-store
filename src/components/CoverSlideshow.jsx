@@ -1,40 +1,54 @@
 import { useEffect, useState } from "react";
+
 import header1 from "../assets/watchPic/cov1.png";
 import header2 from "../assets/watchPic/cov2.png";
 import header3 from "../assets/watchPic/cov3.png";
 import header4 from "../assets/watchPic/cov4.png";
 
-const images = [
-  { image: header1, alt: "pic1" },
-  { image: header2, alt: "pic2" },
-  { image: header3, alt: "pic3" },
-  { image: header4, alt: "pic4" },
+const images = [header1, header2, header3, header4];
+
+const titles = [
+  "Fearless Precision",
+  "Innovate Every Second",
+  "Born to Dare",
+  "Timeless Moments",
 ];
 
 export default function CoverSlideshow() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));
-    }, 7000);
+      setIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div id="hero" className="relative w-full h-screen overflow-hidden">
-      {images.map((image, index) => (
+      {images.map((img, i) => (
         <img
-          key={index}
-          src={image.image}
-          alt={image.alt}
-          className={`absolute top-0 left-0 w-full h-screen object-cover transition-opacity backface-hidden duration-2500
-            ${
-              index === currentImageIndex ? "opacity-45 z-10" : "opacity-0 z-0"
-            }`}
+          key={i}
+          src={img}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1300
+            ${i === index ? "opacity-20" : "opacity-0"}
+          `}
         />
       ))}
+
+      <div className="absolute flex inset-0 -translate-y-[5%] justify-center items-center z-50">
+        <h1
+          key={index}
+          className="
+           text-style text-4xl md:text-6xl lg:text-[7rem] font-normal text-center px-6 font-cinzel
+           opacity-0
+           animate-textSlide
+          "
+        >
+          {titles[index]}
+        </h1>
+      </div>
     </div>
   );
 }

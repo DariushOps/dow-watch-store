@@ -26,6 +26,17 @@
       group-hover:opacity-100 group-hover:translate-y-0
       z-50 group-hover:rounded-[1px];
   }
+
+  .text-style {
+    @apply inline-block bg-clip-text text-transparent;
+
+    background-image: linear-gradient(
+      to bottom right,
+      #965205,
+      #fbac1b,
+      #afa487
+    );
+  }
 }
 
 @keyframes fadeIn {
@@ -41,6 +52,23 @@
 
 .animate-fadeIn {
   animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes textSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-textSlide {
+  animation: textSlide 3.7s ease-in-out forwards;
+  animation-delay: 0.2s;
 }
 
 @theme {

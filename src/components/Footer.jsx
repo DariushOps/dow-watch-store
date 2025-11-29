@@ -32,7 +32,7 @@ export default function Footer() {
                 Features
               </h3>
               <hr className="text-gray-200 border-t w-[90%] mx-auto my-6 opacity-50" />
-              <div className="flex gap-7 text-xl md:text-2xl lg:text-3xl capitalize font-lato italic text-gray-300 justify-center items-center">
+              <div className="flex gap-7 text-xl md:text-2xl lg:text-3xl capitalize font-lato justify-center items-center">
                 {[
                   "career",
                   "brand identify",
