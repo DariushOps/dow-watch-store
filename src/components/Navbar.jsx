@@ -43,7 +43,7 @@ export default function Navbar() {
     transition-all duration-500 ease-in-out
     ${
       fixed
-        ? "bg-slate-900/70 backdrop-blur-lg shadow-lg py-6"
+        ? "bg-slate-900/70 backdrop-blur-lg shadow-lg py-6 rounded-b-lg"
         : "bg-transparent py-12"
     }
   `}
