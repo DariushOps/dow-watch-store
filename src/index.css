@@ -52,13 +52,28 @@
 
 .animate-fadeIn {
   animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 0.2;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideFade {
+  animation: slideFade 3s ease-in-out forwards;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes textSlide {
   0% {
     opacity: 0;
-    transform: translateY(-25px);
+    transform: translateY(-30px);
   }
 
   100% {
@@ -69,6 +84,7 @@
 
 .animate-textSlide {
   animation: textSlide 3.7s ease-in-out forwards;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   animation-delay: 0.2s;
 }
 

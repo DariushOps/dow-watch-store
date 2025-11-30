@@ -31,13 +31,13 @@ export default function CoverSlideshow() {
         <img
           key={i}
           src={img}
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1300
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1600
             ${i === index ? "opacity-20" : "opacity-0"}
           `}
         />
       ))}
 
-      <div className="absolute flex inset-0 -translate-y-[5%] justify-center items-center z-50">
+      <div className="absolute flex inset-0 -translate-y-[2%] justify-center items-center z-50">
         <h1
           key={index}
           className="

@@ -8,7 +8,7 @@ export default function ScrollProgress() {
   const circumference = 2 * Math.PI * radius;
 
   useEffect(() => {
-    const handleScroll = () => {
+    function handleScroll() {
       const total =
         document.documentElement.scrollHeight -
         document.documentElement.clientHeight;
@@ -20,7 +20,7 @@ export default function ScrollProgress() {
       }
 
       setShow(window.scrollY > 300);
-    };
+    }
 
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });

@@ -20,7 +20,7 @@ export default function Navbar() {
   const [fixed, setFixed] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    function handleScroll() {
       const heroHeight = document.getElementById("hero")?.offsetHeight || 200;
 
       if (window.scrollY >= heroHeight - 20) {
@@ -28,7 +28,7 @@ export default function Navbar() {
       } else {
         setFixed(false);
       }
-    };
+    }
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
