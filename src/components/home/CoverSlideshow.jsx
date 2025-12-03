@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-import header1 from "../assets/watchPic/cov1.png";
-import header2 from "../assets/watchPic/cov2.png";
-import header3 from "../assets/watchPic/cov3.png";
-import header4 from "../assets/watchPic/cov4.png";
+import header1 from "../../assets/watchPic/cov1.png";
+import header2 from "../../assets/watchPic/cov2.png";
+import header3 from "../../assets/watchPic/cov3.png";
+import header4 from "../../assets/watchPic/cov4.png";
 
 const images = [header1, header2, header3, header4];
 

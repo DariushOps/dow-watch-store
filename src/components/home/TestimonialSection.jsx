@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import testimonials from "../../dataTest";
-import ImgBg from "../assets/watchPic/5.webp";
+import testimonials from "../../../dataTest";
+import ImgBg from "../../assets/watchPic/5.webp";
 import { AnimatePresence, motion } from "framer-motion";
 
 const slides = testimonials.length;

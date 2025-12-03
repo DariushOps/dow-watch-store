@@ -1,4 +1,4 @@
-import Watch from "../assets/watchPic/13.webp";
+import Watch from "../../assets/watchPic/13.webp";
 import { Link } from "react-router-dom";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useRef, useEffect } from "react";

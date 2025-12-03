@@ -1,7 +1,7 @@
-import Omega from "../assets/watchPic/27.webp";
-import Seiko from "../assets/watchPic/17.webp";
-import Heuer from "../assets/watchPic/18.webp";
-import CustomButton from "../utilities/CustomButton";
+import Omega from "../../assets/watchPic/27.webp";
+import Seiko from "../../assets/watchPic/17.webp";
+import Heuer from "../../assets/watchPic/18.webp";
+import CustomButton from "../../utilities/CustomButton";
 import { motion } from "framer-motion";
 
 const parent = {

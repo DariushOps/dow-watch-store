@@ -19,6 +19,7 @@ const router = createBrowserRouter([
       {
         path: "shop",
         element: <Shop />,
+        loader: null,
       },
       {
         path: "about",

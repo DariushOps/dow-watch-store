@@ -1,3 +1,11 @@
+import FirstSection from "../components/shop/FirstSection";
+import ProductSection from "../components/shop/ProductSection";
+
 export default function Shop() {
-  return <h1>Shop Page</h1>;
+  return (
+    <main>
+      <FirstSection />
+      <ProductSection />
+    </main>
+  );
 }

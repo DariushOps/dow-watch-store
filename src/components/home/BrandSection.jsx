@@ -1,7 +1,7 @@
-import Rolex from "../assets/watchPic/7.webp";
-import Omega from "../assets/watchPic/12.webp";
-import Seiko from "../assets/watchPic/21.webp";
-import Breitling from "../assets/watchPic/3.webp";
+import Rolex from "../../assets/watchPic/7.webp";
+import Omega from "../../assets/watchPic/12.webp";
+import Seiko from "../../assets/watchPic/21.webp";
+import Breitling from "../../assets/watchPic/3.webp";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 export default function BrandSection() {
