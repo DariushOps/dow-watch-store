@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
+import { shopLoader } from "./utilities/shopLoader";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
       {
         path: "shop",
         element: <Shop />,
-        loader: null,
+        loader: shopLoader,
       },
       {
         path: "about",
