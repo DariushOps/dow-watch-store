@@ -74,6 +74,7 @@
   0% {
     opacity: 0;
     transform: translateY(-30px);
+    color: #f28e03;
   }
 
   100% {

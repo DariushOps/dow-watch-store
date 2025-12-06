@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import CustomButton from "../../utilities/CustomButton";
+import { motion } from "framer-motion";
 
 export default function ProductSection() {
   const data = useLoaderData();
@@ -10,7 +10,7 @@ export default function ProductSection() {
         {data.map((item) => (
           <article
             key={item.id}
-            className="w-full sm:w-[40%] md:w-[32%] mx-auto h-215 flex bg-white flex-col items-center justify-center rounded-sm mb-8 relative"
+            className="w-full sm:w-[40%] md:w-[32.5%] mx-auto h-215 flex bg-white flex-col items-center justify-center rounded-sm mb-4 relative"
           >
             <div className="relative w-full h-full overflow-hidden group ">
               <img
@@ -22,15 +22,32 @@ export default function ProductSection() {
             </div>
             <div className="flex w-full h-40 pt-4">
               <div className=" flex text-stone-950 w-[60%] flex-col items-start">
-                <p className="h-1/2 font-lato font-bold text-[1.6rem] flex items-center px-6">
+                <p className="h-1/2 font-montserrat font-semibold text-[1.4rem] flex items-center pl-6">
                   {item.model}
                 </p>
-                <p className="h-1/2 font-montserrat font-bold text-[1.6rem] flex items-start px-6">
+                <p className="h-1/2 font-montserrat font-semibold text-[1.6rem] flex items-start px-6">
                   {item.price}
                 </p>
               </div>
               <div className="flex w-[40%] justify-center items-center">
-                <button className="w-40 h-15 bg-red-700">Add to card</button>
+                <motion.button
+                  whileHover={{
+                    borderRadius: "10px",
+                    color: "#e5e7eb",
+                    backgroundColor: "#f28e03",
+                    boxShadow: "0 0 12px rgba(255,255,255,0.15)",
+                  }}
+                  whileTap={{ scale: 0.97 }}
+                  transition={{
+                    duration: 0.5,
+                    type: "spring",
+                    stiffness: 500,
+                    damping: 100,
+                  }}
+                  className="w-45 h-18 bg-amber-500 border-2 border-amber-600 text-xl font-lato font-semibold rounded-md cursor-pointer"
+                >
+                  Add to card
+                </motion.button>
               </div>
             </div>
           </article>
