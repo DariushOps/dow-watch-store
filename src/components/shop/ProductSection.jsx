@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import { motion } from "framer-motion";
+import { currencyFormatter } from "../../utilities/formatting";
 
 export default function ProductSection() {
   const data = useLoaderData();
@@ -26,7 +27,7 @@ export default function ProductSection() {
                   {item.model}
                 </p>
                 <p className="h-1/2 font-montserrat font-semibold text-[1.6rem] flex items-start px-6">
-                  {item.price}
+                  {currencyFormatter.format(item.price).replace("£", "£ ")}
                 </p>
               </div>
               <div className="flex w-[40%] justify-center items-center">
