@@ -16,13 +16,13 @@ export default function ProductSection() {
               <img
                 src={item.image}
                 alt={item.model}
-                className="w-full h-full scale-75 object-cover rounded-md group-hover:scale-77 transition-transform duration-400 backface-hidden"
+                className="w-full h-full scale-75 object-cover rounded-md group-hover:scale-79 transition-transform duration-400 backface-hidden"
               />
               <div className="absolute inset-0 opacity-10 bg-black "></div>
             </div>
             <div className="flex w-full h-40 pt-4">
               <div className=" flex text-stone-950 w-[60%] flex-col items-start">
-                <p className="h-1/2 font-montserrat font-semibold text-[1.4rem] flex items-center pl-6">
+                <p className="h-1/2 font-lato italic font-semibold text-[1.6rem] flex items-center pl-6">
                   {item.model}
                 </p>
                 <p className="h-1/2 font-montserrat font-semibold text-[1.6rem] flex items-start px-6">
@@ -33,18 +33,17 @@ export default function ProductSection() {
                 <motion.button
                   whileHover={{
                     borderRadius: "10px",
-                    color: "#e5e7eb",
-                    backgroundColor: "#f28e03",
+                    color: "#fff",
                     boxShadow: "0 0 12px rgba(255,255,255,0.15)",
                   }}
-                  whileTap={{ scale: 0.97 }}
+                  whileTap={{ scale: 0.95 }}
                   transition={{
-                    duration: 0.5,
+                    duration: 0.4,
                     type: "spring",
                     stiffness: 500,
                     damping: 100,
                   }}
-                  className="w-45 h-18 bg-amber-500 border-2 border-amber-600 text-xl font-lato font-semibold rounded-md cursor-pointer"
+                  className="w-45 h-18 bg-slate-700 border-2 border-slate-900 text-xl font-montserrat font-medium rounded-md cursor-pointer text-white hover:bg-slate-800 transition-colors duration-400 capitalize"
                 >
                   Add to card
                 </motion.button>
