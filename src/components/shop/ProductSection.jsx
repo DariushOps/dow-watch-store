@@ -1,9 +1,23 @@
 import { useLoaderData } from "react-router-dom";
 import { motion } from "framer-motion";
 import { currencyFormatter } from "../../utilities/formatting";
+import { useDispatch } from "react-redux";
+import { cartActions } from "../../store/cartSlice";
 
 export default function ProductSection() {
   const data = useLoaderData();
+  const dispatch = useDispatch();
+
+  function addToCart(product) {
+    dispatch(
+      cartActions.addToCart({
+        id: product.id,
+        model: product.model,
+        price: product.price,
+        quantity: 1,
+      })
+    );
+  }
 
   return (
     <section className="py-40">
@@ -32,6 +46,7 @@ export default function ProductSection() {
               </div>
               <div className="flex w-[40%] justify-center items-center">
                 <motion.button
+                  onClick={() => addToCart(item)}
                   whileHover={{
                     borderRadius: "10px",
                     color: "#fff",
@@ -46,7 +61,7 @@ export default function ProductSection() {
                   }}
                   className="w-45 h-18 bg-slate-700 border-2 border-slate-900 text-xl font-montserrat font-medium rounded-md cursor-pointer text-white hover:bg-slate-800 transition-colors duration-400 capitalize"
                 >
-                  Add to card
+                  Add to cart
                 </motion.button>
               </div>
             </div>

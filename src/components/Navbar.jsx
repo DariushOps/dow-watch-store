@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { PiShoppingBagOpenFill } from "react-icons/pi";
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 
 function CartIcon({ count }) {
   return (
@@ -18,6 +19,7 @@ function CartIcon({ count }) {
 
 export default function Navbar() {
   const [fixed, setFixed] = useState(false);
+  const total = useSelector((state) => state.cart.totalQuantities);
 
   useEffect(() => {
     function handleScroll() {
@@ -70,7 +72,7 @@ export default function Navbar() {
       </div>
 
       <div className="flex items-center justify-center gap-5 text-[1.4rem]">
-        <CartIcon count={2} />
+        <CartIcon count={total} />
         <Link className="hover:text-amber-400/90 duration-500" to="login">
           Log In
         </Link>

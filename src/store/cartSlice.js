@@ -4,25 +4,29 @@ const cart = createSlice({
   name: "cart",
   initialState: {
     items: [],
-    totalQuantites: 0,
+    totalQuantities: 0,
     changed: false,
   },
   reducers: {
     addToCart(state, action) {
-      const existingItem = state.items.find(
-        (item) => item.id === action.payload.id
-      );
-      state.totalQuantites++;
+      const newItem = action.payload;
+      const existingItem = state.items.find((item) => item.id === newItem.id);
+      state.totalQuantities++;
       state.changed = true;
+
       if (existingItem) {
-        state.items.map((item) =>
-          item.id === existingItem.id ? existingItem.quantity++ : item
-        );
+        existingItem.quantity++;
       } else {
-        state.items.push(action.payload);
+        state.items.push({
+          id: newItem.id,
+          model: newItem.model,
+          price: newItem.price,
+          quantity: 1,
+        });
       }
     },
   },
 });
 
-export default cart;
+export const cartActions = cart.actions;
+export default cart.reducer;
