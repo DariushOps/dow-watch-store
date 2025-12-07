@@ -88,7 +88,7 @@ export default function Navbar() {
           </Link>
         </div>
       </nav>
-      {showCart && <SidebarCart />}
+      {showCart && <SidebarCart onClick={handelShowCart} />}
     </>
   );
 }
