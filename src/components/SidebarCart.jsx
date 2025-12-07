@@ -20,7 +20,10 @@ export default function SidebarCart({ onClick }) {
         </div>
       </div>
 
-      <div className="fixed top-0 left-0 bottom-0 w-[80%] z-100 bg-black opacity-50"></div>
+      <div
+        onClick={onClick}
+        className="fixed top-0 left-0 bottom-0 w-[80%] z-100 bg-black opacity-50 cursor-pointer"
+      ></div>
     </section>
   );
 }
