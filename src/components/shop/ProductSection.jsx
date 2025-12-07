@@ -14,6 +14,7 @@ export default function ProductSection() {
         id: product.id,
         model: product.model,
         price: product.price,
+        image: product.image,
         quantity: 1,
       })
     );
