@@ -1,11 +1,6 @@
 import { useState } from "react";
 
-export default function CustomInput({
-  formInput,
-  type = "text",
-  className = "",
-  ...props
-}) {
+export default function CustomInput({ formInput, type = "text", ...props }) {
   const [input, setInput] = useState("");
   const [isFocused, setIsFocused] = useState(false);
   return (
@@ -23,7 +18,7 @@ export default function CustomInput({
                 w-240 h-18 px-5
                 border border-amber-50 rounded-sm
                 bg-transparent
-                text-white text-2xl font-cormorant capitalize
+                text-white text-3xl font-medium font-cormorant capitalize
                 focus:outline-none
                 focus:border-amber-300
               `}
