@@ -49,11 +49,11 @@ export default function ProductSection() {
                 <motion.button
                   onClick={() => addToCart(item)}
                   whileHover={{
-                    borderRadius: "10px",
+                    borderRadius: "12px",
                     color: "#fff",
                     boxShadow: "0 0 12px rgba(255,255,255,0.15)",
                   }}
-                  whileTap={{ scale: 0.95 }}
+                  whileTap={{ scale: 0.93 }}
                   transition={{
                     duration: 0.4,
                     type: "spring",

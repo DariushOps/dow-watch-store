@@ -85,7 +85,7 @@ export default function CartItems() {
               <motion.span
                 whileHover={{
                   borderRadius: "15px",
-                  background: "oklch(45.7% 0.245 27.325)",
+                  background: "oklch(47.7% 0.245 27.325)",
                 }}
                 whileTap={{ scale: 0.97 }}
                 transition={{
@@ -94,7 +94,7 @@ export default function CartItems() {
                   stiffness: 500,
                   damping: 100,
                 }}
-                className="flex w-full h-full  justify-center rounded-md  border-red-700 border-2 items-center transition-colors duration-500"
+                className="flex w-full h-full  justify-center rounded-md  border-red-600 border-2 items-center transition-colors duration-500"
               >
                 checkout
               </motion.span>
