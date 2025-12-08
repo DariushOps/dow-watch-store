@@ -2,10 +2,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { currencyFormatter } from "../utilities/formatting";
 import { cartActions } from "../store/cartSlice";
 import { FaTrashAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function CartItems() {
   const products = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
+  const totalPrice = products.reduce(
+    (acc, product) => acc + product.price * product.quantity,
+    0
+  );
 
   function handleIncrease(product) {
     dispatch(
@@ -69,12 +75,37 @@ export default function CartItems() {
           </div>
         </>
       ))}
-      <div className="py-10 w-[85%] mx-auto">
+      <div className="py-10 w-[85%] mx-auto text-gray-400">
         <hr />
       </div>
       <div className="flex w-full px-8 pb-20">
-        <div className="w-3/5">hello</div>
-        <div className="2/5"> hi</div>
+        <div className=" flex w-4/6 justify-start items-center">
+          <div className="flex w-full">
+            <Link className="flex w-[80%] text-[1.4rem]   h-15 font-montserrat justify-center items-center uppercase ml-2">
+              <motion.span
+                whileHover={{
+                  borderRadius: "15px",
+                  background: "oklch(45.7% 0.245 27.325)",
+                }}
+                whileTap={{ scale: 0.97 }}
+                transition={{
+                  duration: 0.5,
+                  type: "spring",
+                  stiffness: 500,
+                  damping: 100,
+                }}
+                className="flex w-full h-full  justify-center rounded-md  border-red-700 border-2 items-center transition-colors duration-500"
+              >
+                checkout
+              </motion.span>
+            </Link>
+          </div>
+        </div>
+        <div className="flex w-2/6 justify-center items-center">
+          <div className="font-lato text-[1.4rem] font-semibold justify-start items-center -ml-7">
+            <p>{currencyFormatter.format(totalPrice).replace("£", "£ ")}</p>
+          </div>
+        </div>
       </div>
     </div>
   );
