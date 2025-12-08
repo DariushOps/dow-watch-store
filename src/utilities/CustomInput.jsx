@@ -6,11 +6,12 @@ export default function CustomInput({ formInput, type = "text", ...props }) {
   return (
     <div className="relative w-[80%] mt-12">
       <input
+        autoComplete="off"
         id={formInput}
         type={type}
         name={formInput}
         placeholder=" "
-        value={input}
+        defaultValue={input}
         onChange={(e) => setInput(e.target.value)}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
