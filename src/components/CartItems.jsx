@@ -117,7 +117,7 @@ export default function CartItems({ onClick }) {
         </div>
       ) : (
         <div className="flex w-[80%] mx-auto h-30 rounded-3xl bg-slate-500/80 justify-center items-center text-2xl font-montserrat capitalize">
-          <p className="flex items-center gap-2 justify-center">
+          <p className="flex w-full items-center gap-2 justify-center">
             Your Cart is empty
             <span>
               <ImSad2 className="w-6 h-6" />
