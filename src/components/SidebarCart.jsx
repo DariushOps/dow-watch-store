@@ -19,7 +19,7 @@ export default function SidebarCart({ onClick }) {
           className="flex overflow-y-auto"
           style={{ marginTop: "7rem", height: "calc(100% - 7rem)" }}
         >
-          <CartItems />
+          <CartItems onClick={onClick} />
         </div>
       </div>
 
