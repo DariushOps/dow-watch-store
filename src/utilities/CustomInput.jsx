@@ -29,15 +29,15 @@ export default function CustomInput({ formInput, type = "text", ...props }) {
       <label
         htmlFor={formInput}
         className={`
-                absolute left-5 
+                absolute
                 text-amber-50 font-cinzel
                 pointer-events-none
                 transition-all duration-300
 
                 ${
                   isFocused || input
-                    ? "-top-3 text-[1.2rem] bg-slate-950 px-1 text-amber-400"
-                    : "top-6 text-2xl"
+                    ? "-top-4 left-4 text-[1.4rem] bg-slate-950 px-1 text-amber-400"
+                    : "top-4  left-6  text-[1.8rem]"
                 }
               `}
       >
