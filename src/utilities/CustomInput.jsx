@@ -16,7 +16,7 @@ export default function CustomInput({ formInput, type = "text", ...props }) {
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
         className={`
-                w-240 h-18 px-5
+                w-270 h-18 px-5
                 border border-amber-50 rounded-sm
                 bg-transparent
                 text-white text-3xl font-medium font-cormorant capitalize

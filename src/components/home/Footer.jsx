@@ -5,8 +5,8 @@ import { SiX } from "react-icons/si";
 export default function Footer() {
   return (
     <footer>
-      <section className="h-175 w-full">
-        <div className=" flex w-full h-150 bg-slate-900/60 flex-col gap-10">
+      <section className="h-150 w-full">
+        <div className=" flex w-full h-130 bg-slate-900/60 flex-col gap-10">
           <div className="flex w-full h-[35%] justify-center items-end">
             <Link>
               <h2 className="font-greatVibes text-[4.5rem] font-semibold text-center hover:text-amber-400/80 duration-500 transition-colors">
