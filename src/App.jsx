@@ -7,6 +7,8 @@ import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
 import { shopLoader } from "./utilities/shopLoader";
 import Checkout from "./pages/Checkout";
+import LogIn from "./components/LogIn";
+import SignUp from "./components/SignUp";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
       {
         path: "checkout",
         element: <Checkout />,
+      },
+      {
+        path: "login",
+        element: <LogIn />,
+      },
+      {
+        path: "signup",
+        element: <SignUp />,
       },
     ],
   },

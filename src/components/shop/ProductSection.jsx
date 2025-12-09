@@ -21,12 +21,12 @@ export default function ProductSection() {
   }
 
   return (
-    <section className="py-40">
-      <div className="flex flex-wrap w-[80%] gap-0 m-auto">
+    <section className="py-60">
+      <div className="flex flex-wrap w-[80%] gap-4 m-auto">
         {data.map((item) => (
           <article
             key={item.id}
-            className="w-full sm:w-[40%] md:w-[32.5%] mx-auto h-215 flex bg-white flex-col items-center justify-center rounded-sm mb-4 relative"
+            className="w-full sm:w-[40%] md:w-[32.5%] h-215 flex bg-white flex-col items-center justify-center rounded-sm mb-1 relative"
           >
             <div className="relative w-full h-full overflow-hidden group ">
               <img
