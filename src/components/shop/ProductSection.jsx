@@ -49,9 +49,8 @@ export default function ProductSection() {
                 <motion.button
                   onClick={() => addToCart(item)}
                   whileHover={{
-                    borderRadius: "12px",
+                    borderRadius: "15px",
                     color: "#fff",
-                    boxShadow: "0 0 12px rgba(255,255,255,0.15)",
                   }}
                   whileTap={{ scale: 0.93 }}
                   transition={{
@@ -60,7 +59,7 @@ export default function ProductSection() {
                     stiffness: 500,
                     damping: 100,
                   }}
-                  className="w-45 h-18 bg-slate-700 border-2 border-slate-900 text-xl font-montserrat font-medium rounded-md cursor-pointer text-white hover:bg-slate-800 transition-colors duration-400 capitalize"
+                  className="w-45 h-18 bg-emerald-800 border-2 border-emerald-900 text-xl font-montserrat font-medium rounded-md cursor-pointer text-white hover:bg-emerald-600 transition-colors duration-400 capitalize"
                 >
                   Add to cart
                 </motion.button>
