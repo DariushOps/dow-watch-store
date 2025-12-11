@@ -22,7 +22,7 @@ export default function ProductSection() {
 
   return (
     <section className="py-12 md:py-28 lg:py-60">
-      <div className="w-[95%] lg:w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="sm:w-[85%] md:w-[95%] lg:w-[80%] mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {data.map((item) => (
           <article
             key={item.id}
@@ -32,7 +32,7 @@ export default function ProductSection() {
             <div
               className="
                 relative w-full 
-                sm:h-120 md:h-150 lg:h-215
+                h-56 sm:h-120 md:h-150 lg:h-215
                 overflow-hidden group
               "
             >
@@ -52,10 +52,8 @@ export default function ProductSection() {
               <div className="absolute inset-0 bg-black opacity-10 pointer-events-none" />
             </div>
 
-            {/* متن و دکمه */}
             <div className="flex items-center justify-between gap-2 p-4 md:p-5 lg:h-40">
               <div className="flex flex-col w-2/3">
-                {/* مدل ساعت (بدون truncate – با واکنش‌پذیری واقعی) */}
                 <p
                   className="
                     font-lato italic font-semibold
@@ -69,7 +67,6 @@ export default function ProductSection() {
                   {item.model}
                 </p>
 
-                {/* قیمت */}
                 <p
                   className="
                     font-montserrat font-semibold text-stone-900
@@ -81,7 +78,6 @@ export default function ProductSection() {
                 </p>
               </div>
 
-              {/* دکمه */}
               <div className="flex w-1/3 justify-center items-center">
                 <motion.button
                   onClick={() => addToCart(item)}
