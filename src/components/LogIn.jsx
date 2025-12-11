@@ -38,11 +38,12 @@ export default function LogIn() {
               />
               <label
                 htmlFor="username"
-                className={`text-xl ${
+                className={` text-xl flex justify-start px-4 font-cinzel transition-all duration-400 ${
                   value.username.length > 0
-                    ? "animate-floatLabelDown opacity-100"
-                    : "animate-floatLabelUp  opacity-0"
-                }  flex justify-start px-4 font-cinzel`}
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 -translate-y-2"
+                }
+  `}
               >
                 username
               </label>
@@ -65,10 +66,10 @@ export default function LogIn() {
               />
               <label
                 htmlFor="pass"
-                className={`text-xl ${
+                className={`text-xl flex justify-start px-4 font-cinzel transition-all duration-400 ${
                   value.pass.length > 0
-                    ? "animate-floatLabelDown opacity-100"
-                    : "animate-floatLabelUp  opacity-0"
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 -translate-y-2"
                 }  flex justify-start px-4 font-cinzel`}
               >
                 password

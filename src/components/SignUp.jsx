@@ -40,9 +40,9 @@ export default function SignUp() {
                 htmlFor="username"
                 className={`text-xl ${
                   value.username.length > 0
-                    ? "animate-floatLabelDown opacity-100"
-                    : "animate-floatLabelUp  opacity-0"
-                }  flex justify-start px-4 font-cinzel`}
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 -translate-y-2"
+                }  flex justify-start px-4 font-cinzel transition-all duration-400`}
               >
                 username
               </label>
@@ -66,9 +66,9 @@ export default function SignUp() {
                 htmlFor="email"
                 className={`text-xl ${
                   value.email.length > 0
-                    ? "animate-floatLabelDown opacity-100"
-                    : "animate-floatLabelUp  opacity-0"
-                }  flex justify-start px-4 font-cinzel`}
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 -translate-y-2"
+                }  flex justify-start px-4 font-cinzel transition-all duration-400`}
               >
                 email
               </label>
@@ -93,9 +93,9 @@ export default function SignUp() {
                 htmlFor="pass"
                 className={`text-xl ${
                   value.pass.length > 0
-                    ? "animate-floatLabelDown opacity-100"
-                    : "animate-floatLabelUp  opacity-0"
-                }  flex justify-start px-4 font-cinzel`}
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 -translate-y-2"
+                }  flex justify-start px-4 font-cinzel transition-all duration-400`}
               >
                 password
               </label>
@@ -119,9 +119,9 @@ export default function SignUp() {
                 htmlFor="confirmPass"
                 className={`text-xl ${
                   value.confirmPass.length > 0
-                    ? "animate-floatLabelDown opacity-100"
-                    : "animate-floatLabelUp  opacity-0"
-                }  flex justify-start px-4 font-cinzel`}
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 -translate-y-2"
+                }  flex justify-start px-4 font-cinzel transition-all duration-400`}
               >
                 confirmPass
               </label>
