@@ -26,9 +26,9 @@ export default function CheckoutSection() {
             <CustomInput
               formInput="postalCode"
               type="number"
-              style={{ width: "100%" }}
+              style={{ width: "320px" }}
             />
-            <CustomInput formInput="street" style={{ width: "100%" }} />
+            <CustomInput formInput="street" style={{ width: "320px" }} />
           </div>
 
           <div className="flex w-270 rounded-md h-18 hover:bg-red-700 hover:-translate-y-1 active:translate-y-1 transition-all duration-500 text-[2.2rem] font-cinzel border-3 tracking-[.5rem] border-red-700 hover:tracking-[1rem] mt-12 justify-center items-center">

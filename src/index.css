@@ -88,6 +88,37 @@
   animation-delay: 0.2s;
 }
 
+@keyframes floatLabelDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-floatLabelDown {
+  animation: floatLabelDown 0.4s ease-in-out;
+}
+@keyframes floatLabelUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.animate-floatLabelUp {
+  animation: floatLabelUp 0.4s ease-in-out;
+}
+
 @theme {
   --font-montserrat: "Montserrat Alternates", sans-serif;
   --font-lato: "Lato", sans-serif;
