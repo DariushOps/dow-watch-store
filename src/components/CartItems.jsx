@@ -116,7 +116,7 @@ export default function CartItems({ onClick }) {
           </div>
         </div>
       ) : (
-        <div className="flex w-[80%] mx-auto h-30 rounded-3xl bg-slate-500/80 justify-center items-center text-2xl font-montserrat capitalize">
+        <div className="flex w-[80%] mx-auto h-30 rounded-3xl bg-emerald-500/50 justify-center items-center text-2xl font-lato font-medium italic capitalize">
           <p className="flex w-full items-center gap-2 justify-center">
             Your Cart is empty
             <span>

@@ -26,13 +26,13 @@ export default function ProductSection() {
         {data.map((item) => (
           <article
             key={item.id}
-            className="w-full sm:w-[40%] md:w-[32.5%] h-215 flex bg-white flex-col items-center justify-center rounded-sm mb-1 relative"
+            className="w-full sm:w-[40%] md:w-[32.5%] h-215 flex bg-white flex-col items-center justify-center rounded-md mb-1 relative"
           >
             <div className="relative w-full h-full overflow-hidden group ">
               <img
                 src={item.image}
                 alt={item.model}
-                className="w-full h-full scale-75 object-cover rounded-md group-hover:scale-79 transition-transform duration-400 backface-hidden"
+                className="w-full h-full scale-75 object-cover rounded-lg group-hover:scale-79 transition-transform duration-400 backface-hidden"
               />
               <div className="absolute inset-0 opacity-10 bg-black "></div>
             </div>

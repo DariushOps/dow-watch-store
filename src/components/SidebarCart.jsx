@@ -10,8 +10,8 @@ export default function SidebarCart({ onClick }) {
             className="relative w-8 h-2 flex items-center justify-center text-4xl cursor-pointer group"
           >
             <span className="absolute w-8 h-1 bg-white  group-hover:opacity-0 mb-4 transition-all duration-200 origin-center"></span>
-            <span className="absolute w-8 h-1 bg-white  group-hover:rotate-45 transition-all duration-200  origin-center"></span>
-            <span className="absolute w-8 h-1 bg-white  group-hover:-rotate-45 transition-all duration-200  origin-center"></span>
+            <span className="absolute w-8 h-1 bg-white group-hover:bg-red-500  group-hover:rotate-45 transition-all duration-200  origin-center"></span>
+            <span className="absolute w-8 h-1 bg-white group-hover:bg-red-500  group-hover:-rotate-45 transition-all duration-200  origin-center"></span>
             <span className="absolute w-8 h-1 bg-white  group-hover:opacity-0  mt-4 transition-all duration-200  origin-center"></span>
           </button>
         </div>
