@@ -127,10 +127,10 @@ export default function SignUp() {
               </label>
             </div>
             <div className="flex justify-center mx-auto gap-10 w-175">
-              <button className="flex w-85 justify-center bg-amber-600 h-18 items-center rounded-sm">
+              <button className="flex w-85 justify-center hover:bg-amber-600  hover:-translate-y-1 active:translate-y-1 transition-all duration-400 border-2 tracking-[.1rem] hover:tracking-[.3rem] border-amber-600  h-18 items-center rounded-md font-montserrat uppercase text-3xl cursor-pointer">
                 login
               </button>
-              <button className="flex w-85 justify-center bg-emerald-800 h-18 items-center rounded-sm">
+              <button className="flex w-85 justify-center hover:bg-emerald-800  hover:-translate-y-1 active:translate-y-1 transition-all duration-400  tracking-[.1rem] hover:tracking-[.3rem] bg-emerald-700 h-18 items-center rounded-md font-montserrat uppercase text-3xl cursor-pointer">
                 Signup
               </button>
             </div>

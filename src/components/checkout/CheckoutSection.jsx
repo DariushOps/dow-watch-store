@@ -31,8 +31,10 @@ export default function CheckoutSection() {
             <CustomInput formInput="street" style={{ width: "320px" }} />
           </div>
 
-          <div className="flex w-270 rounded-md h-18 hover:bg-red-700 hover:-translate-y-1 active:translate-y-1 transition-all duration-500 text-[2.2rem] font-cinzel border-3 tracking-[.5rem] border-red-700 hover:tracking-[1rem] mt-12 justify-center items-center">
-            <button className="uppercase w-full h-full">Submit</button>
+          <div className="flex w-270 rounded-md h-18 hover:bg-emerald-700  hover:-translate-y-1 active:translate-y-1 transition-all duration-500 text-[2.2rem] font-montserrat border-2 tracking-[.5rem] border-emerald-700 hover:tracking-[1rem] mt-12 justify-center items-center">
+            <button className="flex uppercase w-270 h-18 justify-center items-center cursor-pointer">
+              Submit
+            </button>
           </div>
         </form>
       </div>
