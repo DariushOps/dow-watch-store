@@ -80,10 +80,10 @@ export default function Navbar() {
 
         <div className="flex items-center justify-center gap-5 text-[1.4rem]">
           <CartIcon count={total} onClick={handelShowCart} />
-          <Link className="hover:text-amber-400/90 duration-500" to="login">
+          <Link className="hover:text-amber-400 duration-500" to="login">
             Log In
           </Link>
-          <Link className="hover:text-amber-400/90 duration-500" to="signup">
+          <Link className="hover:text-amber-400 duration-500" to="signup">
             Sign Up
           </Link>
         </div>

@@ -21,45 +21,87 @@ export default function ProductSection() {
   }
 
   return (
-    <section className="py-60">
-      <div className="flex flex-wrap w-[80%] gap-4 m-auto">
+    <section className="py-12 md:py-28 lg:py-60">
+      <div className="w-[95%] lg:w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {data.map((item) => (
           <article
             key={item.id}
-            className="w-full sm:w-[40%] md:w-[32.5%] h-215 flex bg-white flex-col items-center justify-center rounded-md mb-1 relative"
+            className="bg-white rounded-md overflow-hidden flex flex-col shadow-sm"
           >
-            <div className="relative w-full h-full overflow-hidden group ">
+            {/* تصویر */}
+            <div
+              className="
+                relative w-full 
+                sm:h-120 md:h-150 lg:h-215
+                overflow-hidden group
+              "
+            >
               <img
                 src={item.image}
                 alt={item.model}
-                className="w-full h-full scale-75 object-cover rounded-lg group-hover:scale-79 transition-transform duration-400 backface-hidden"
+                className="
+                  w-full h-full object-cover rounded-t-md
+                  transition-transform duration-500
+                  sm:scale-55
+                  sm:group-hover:scale-60
+                  md:scale-60
+                  md:group-hover:scale-65
+                  lg:scale-68 lg:group-hover:scale-73
+                "
               />
-              <div className="absolute inset-0 opacity-10 bg-black "></div>
+              <div className="absolute inset-0 bg-black opacity-10 pointer-events-none" />
             </div>
-            <div className="flex w-full h-40 pt-4">
-              <div className=" flex text-stone-950 w-[60%] flex-col items-start">
-                <p className="h-1/2 font-lato italic font-semibold text-[1.6rem] flex items-center pl-6">
+
+            {/* متن و دکمه */}
+            <div className="flex items-center justify-between gap-2 p-4 md:p-5 lg:h-40">
+              <div className="flex flex-col w-2/3">
+                {/* مدل ساعت (بدون truncate – با واکنش‌پذیری واقعی) */}
+                <p
+                  className="
+                    font-lato italic font-semibold
+                    text-[1.2rem] text-stone-900
+                    sm:text-[1.4rem] 
+                    md:text-[1.3rem] 
+                    lg:text-[1.6rem]
+                 
+                  "
+                >
                   {item.model}
                 </p>
-                <p className="h-1/2 font-montserrat font-semibold text-[1.6rem] flex items-start px-6">
+
+                {/* قیمت */}
+                <p
+                  className="
+                    font-montserrat font-semibold text-stone-900
+                    mt-1
+                    text-[1rem] sm:text-[1.2rem] md:text-[1.15rem] lg:text-[1.45rem]
+                  "
+                >
                   {currencyFormatter.format(item.price).replace("£", "£ ")}
                 </p>
               </div>
-              <div className="flex w-[40%] justify-center items-center">
+
+              {/* دکمه */}
+              <div className="flex w-1/3 justify-center items-center">
                 <motion.button
                   onClick={() => addToCart(item)}
-                  whileHover={{
-                    borderRadius: "15px",
-                    color: "#fff",
-                  }}
-                  whileTap={{ scale: 0.93 }}
+                  whileHover={{ borderRadius: "12px", color: "#fff" }}
+                  whileTap={{ scale: 0.97 }}
                   transition={{
-                    duration: 0.4,
+                    duration: 0.28,
                     type: "spring",
-                    stiffness: 500,
-                    damping: 100,
+                    stiffness: 300,
+                    damping: 30,
                   }}
-                  className="w-45 h-18 bg-emerald-800 border-2 border-emerald-900 text-xl font-montserrat font-medium rounded-md cursor-pointer text-white hover:bg-emerald-600 transition-colors duration-400 capitalize"
+                  className="
+                    w-28 h-10 text-sm
+                    md:w-36 md:h-12 md:text-base
+                    lg:w-45 lg:h-18 lg:text-xl
+                    bg-emerald-800 border-2 border-emerald-900
+                    font-montserrat font-medium rounded-md cursor-pointer
+                    text-white hover:bg-emerald-600 transition-colors duration-300
+                    flex items-center justify-center
+                  "
                 >
                   Add to cart
                 </motion.button>
