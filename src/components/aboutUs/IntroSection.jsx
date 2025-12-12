@@ -14,19 +14,16 @@ export default function IntroSection() {
     >
       <div className="flex w-[50%] justify-center">
         <h2 className="header-secondary">
-          Luxury Watches, <br />
-          Crafted for You
+          Designed to Define <br /> Your Moment
         </h2>
       </div>
       <div className="flex w-[50%] justify-center items-center">
         <p className="text-sm lg:text-[1.8rem] px-10 m-0 font-lato ">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, fugiat
-          ipsum corporis quia error nisi dignissimos asperiores numquam,
-          molestias magnam possimus eaque delectus nesciunt nam, exercitationem
-          dolor molestiae eius quae. Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Placeat consequatur, dolor quod ab nobis, quasi
-          debitis temporibus eaque veniam, ut saepe eveniet id assumenda alias
-          accusantium minima vel sapiente delectus.
+          At DOW, we believe that every second counts, and choosing the right
+          watch can elevate your style, personality, and special moments. Our
+          store was created to provide a simple, secure, and enjoyable online
+          shopping experience a place where you can find everything from the
+          latest trends to classic designs with ease.
         </p>
       </div>
     </motion.section>

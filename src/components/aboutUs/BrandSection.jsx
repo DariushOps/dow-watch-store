@@ -1,7 +1,6 @@
-import Rolex from "../../assets/watchPic/7.webp";
-import Omega from "../../assets/watchPic/12.webp";
-import Seiko from "../../assets/watchPic/21.webp";
-import Breitling from "../../assets/watchPic/3.webp";
+import Rolex from "../../assets/watchPic/28.webp";
+import Img from "../../assets/watchPic/2.webp";
+
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 export default function BrandSection() {
@@ -9,11 +8,11 @@ export default function BrandSection() {
     <section>
       <div className="w-full bg-slate-900/60">
         <motion.div
-          initial={{ opacity: 0, x: -400 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
+          initial={{ opacity: 0, y: 150 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{
-            duration: 4,
+            duration: 3,
             type: "spring",
           }}
           className="flex gap-0 h-180 items-center justify-center w-full overflow-hidden"
@@ -25,11 +24,11 @@ export default function BrandSection() {
               className="h-full w-full object-cover scale-105 object-center opacity-85 hover:opacity-60 hover:scale-100 transition-all duration-600 cursor-pointer "
             />
           </div>
-          <div className="flex w-[50%] px-10 flex-col gap-16 ">
-            <h2 className="block w-[30%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5.2rem] font-light uppercase">
-              Rolex
+          <div className="flex w-[50%] px-10 flex-col gap-12 ">
+            <h2 className="block w-[70%]  cursor-context-menu ml-8 font-cormorant text-gray-200 hover:text-amber-500  hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[4rem] font-light uppercase">
+              Time Refined by DOW
             </h2>
-            <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-center">
+            <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Asperiores itaque temporibus, delectus perferendis rem qui! Quos
               itaque possimus tempore deserunt, exercitationem in ea quas quasi
@@ -38,10 +37,10 @@ export default function BrandSection() {
             </p>
             <Link
               to="shop"
-              className="flex mx-auto justify-center items-center w-70"
+              className="flex justify-start items-center px-10 w-90"
             >
               <motion.span
-                className=" flex mx-auto justify-center items-center w-70 h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.8rem] font-montserrat capitalize"
+                className=" flex justify-center items-center w-70 h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.8rem] font-montserrat capitalize"
                 whileHover={{
                   borderRadius: "10px",
                   color: "#e5e7eb",
@@ -63,17 +62,20 @@ export default function BrandSection() {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: 200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 3, type: "spring" }}
+          initial={{ opacity: 0, y: 150 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.35 }}
+          transition={{
+            duration: 3,
+            type: "spring",
+          }}
           className="flex gap-0 h-180 items-center justify-center w-full overflow-hidden"
         >
-          <div className="flex w-[50%] px-10 flex-col gap-16">
-            <h2 className="block w-[30%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5.2rem] font-light uppercase">
-              Omega
+          <div className="flex w-[50%] px-10 flex-col gap-12 ">
+            <h2 className="block w-[70%] -ml-15  cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500  hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[4.5rem] font-light uppercase">
+              Timeless by DOW
             </h2>
-            <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-center">
+            <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Asperiores itaque temporibus, delectus perferendis rem qui! Quos
               itaque possimus tempore deserunt, exercitationem in ea quas quasi
@@ -82,10 +84,10 @@ export default function BrandSection() {
             </p>
             <Link
               to="shop"
-              className="flex mx-auto justify-center items-center w-70"
+              className="flex justify-start items-center px-10 w-90"
             >
               <motion.span
-                className=" flex mx-auto justify-center items-center w-70 h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.8rem] font-montserrat capitalize"
+                className=" flex justify-center items-center w-70 h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.8rem] font-montserrat capitalize"
                 whileHover={{
                   borderRadius: "10px",
                   color: "#e5e7eb",
@@ -107,9 +109,9 @@ export default function BrandSection() {
           </div>
           <div className="flex w-[50%] group overflow-hidden">
             <img
-              src={Omega}
+              src={Img}
               alt="Watch pic"
-              className="h-full  block object-cover object-center opacity-85 hover:opacity-60 scale-105 hover:scale-100 transition-all transform-gpu duration-600 cursor-pointer"
+              className="h-full w-full object-cover scale-105 object-center opacity-85 hover:opacity-60 hover:scale-100 transition-all duration-600 cursor-pointer "
             />
           </div>
         </motion.div>

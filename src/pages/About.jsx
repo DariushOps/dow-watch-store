@@ -1,7 +1,8 @@
 import AboutImg from "../assets/watchPic/check.webp";
 import BrandSection from "../components/aboutUs/BrandSection";
 import IntroSection from "../components/aboutUs/IntroSection";
-
+import { motion } from "framer-motion";
+import TestimonialSection from "../components/home/TestimonialSection";
 export default function About() {
   return (
     <section>
@@ -21,7 +22,22 @@ export default function About() {
       </div>
       <IntroSection />
       <BrandSection />
-      <div className="py-50 w-[80%] mx-auto text-3xl">
+
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{
+          duration: 2,
+          type: "spring",
+        }}
+        className="flex justify-center items-center py-20"
+      >
+        <h2 className="header-secondary py-10">
+          DOW, Prestige in Every Second
+        </h2>
+      </motion.div>
+      <div className=" pb-40 w-[80%] mx-auto text-center text-[2.3rem] font-lato">
         <p>
           At DOW, we believe that every second counts, and choosing the right
           watch can elevate your style, personality, and special moments. Our
@@ -41,6 +57,7 @@ export default function About() {
           your wrist. Adorn your time with the best, with DOW.
         </p>
       </div>
+      <TestimonialSection />
     </section>
   );
 }
