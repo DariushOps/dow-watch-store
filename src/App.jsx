@@ -1,50 +1,36 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./pages/RootLayout";
 import ErrorPage from "./pages/ErrorPage";
-import Home from "./pages/Home";
-import Shop from "./pages/Shop";
-import About from "./pages/About";
-import ContactUs from "./pages/ContactUs";
 import { shopLoader } from "./utilities/shopLoader";
-import Checkout from "./pages/Checkout";
-import LogIn from "./components/LogIn";
-import SignUp from "./components/SignUp";
+import { lazy, Suspense } from "react";
+import Loading from "./components/Loading";
+
+// Lazy Components
+const HomePage = lazy(() => import("./pages/Home"));
+const ShopPage = lazy(() => import("./pages/Shop"));
+const AboutPage = lazy(() => import("./pages/About"));
+const ContactUsPage = lazy(() => import("./pages/ContactUs"));
+const CheckoutPage = lazy(() => import("./pages/Checkout"));
+const LogInPage = lazy(() => import("./components/LogIn"));
+const SignUpPage = lazy(() => import("./components/SignUp"));
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <RootLayout />,
+    element: (
+      <Suspense fallback={<Loading />}>
+        <RootLayout />
+      </Suspense>
+    ),
     errorElement: <ErrorPage />,
     children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "shop",
-        element: <Shop />,
-        loader: shopLoader,
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
-      {
-        path: "contactUs",
-        element: <ContactUs />,
-      },
-      {
-        path: "checkout",
-        element: <Checkout />,
-      },
-      {
-        path: "login",
-        element: <LogIn />,
-      },
-      {
-        path: "signup",
-        element: <SignUp />,
-      },
+      { index: true, element: <HomePage /> },
+      { path: "shop", element: <ShopPage />, loader: shopLoader },
+      { path: "about", element: <AboutPage /> },
+      { path: "contactUs", element: <ContactUsPage /> },
+      { path: "checkout", element: <CheckoutPage /> },
+      { path: "login", element: <LogInPage /> },
+      { path: "signup", element: <SignUpPage /> },
     ],
   },
 ]);
