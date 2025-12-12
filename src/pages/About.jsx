@@ -37,7 +37,7 @@ export default function About() {
           DOW, Prestige in Every Second
         </h2>
       </motion.div>
-      <div className=" pb-40 w-[80%] mx-auto text-center text-[2.3rem] font-lato">
+      <div className=" pb-40 w-[80%] mx-auto justify-center text-justify text-[2.3rem] font-lato">
         <p>
           At DOW, we believe that every second counts, and choosing the right
           watch can elevate your style, personality, and special moments. Our

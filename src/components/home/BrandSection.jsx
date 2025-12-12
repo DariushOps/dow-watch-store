@@ -29,7 +29,7 @@ export default function BrandSection() {
             <h2 className="block w-[30%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5.2rem] font-light uppercase">
               Rolex
             </h2>
-            <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-center">
+            <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Asperiores itaque temporibus, delectus perferendis rem qui! Quos
               itaque possimus tempore deserunt, exercitationem in ea quas quasi
@@ -73,7 +73,7 @@ export default function BrandSection() {
             <h2 className="block w-[30%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5.2rem] font-light uppercase">
               Omega
             </h2>
-            <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-center">
+            <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Asperiores itaque temporibus, delectus perferendis rem qui! Quos
               itaque possimus tempore deserunt, exercitationem in ea quas quasi
@@ -131,7 +131,7 @@ export default function BrandSection() {
             <h2 className="block w-[30%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5.2rem] font-light uppercase">
               Seiko
             </h2>
-            <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-center">
+            <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Asperiores itaque temporibus, delectus perferendis rem qui! Quos
               itaque possimus tempore deserunt, exercitationem in ea quas quasi
@@ -175,7 +175,7 @@ export default function BrandSection() {
             <h2 className="block w-[50%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[5.2rem] font-light uppercase">
               Breitling
             </h2>
-            <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-center">
+            <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Asperiores itaque temporibus, delectus perferendis rem qui! Quos
               itaque possimus tempore deserunt, exercitationem in ea quas quasi

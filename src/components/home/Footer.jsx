@@ -21,9 +21,10 @@ export default function Footer() {
               </h3>
               <hr className="text-gray-200 border-t w-[90%] mx-auto my-6 opacity-50" />
               <div className="flex items-center justify-center w-[80%] mx-auto">
-                <p className="font-lato text-[1rem] md:text-xl lg:text-2xl text-center">
-                  DOW brings you premium watches that combine timeless design,
-                  exceptional precision, and lasting quality.
+                <p className="font-lato text-[1rem] md:text-xl lg:text-2xl text-justify ">
+                  At DOW, we believe that every second counts, and choosing the
+                  right watch can elevate your style, personality, and special
+                  moments.
                 </p>
               </div>
             </div>

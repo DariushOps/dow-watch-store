@@ -19,7 +19,7 @@ export default function IntroSection() {
         </h2>
       </div>
       <div className="flex w-[50%] justify-center items-center">
-        <p className="text-sm lg:text-[1.8rem] px-10 m-0 font-lato ">
+        <p className="text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-justify">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, fugiat
           ipsum corporis quia error nisi dignissimos asperiores numquam,
           molestias magnam possimus eaque delectus nesciunt nam, exercitationem

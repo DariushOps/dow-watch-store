@@ -78,7 +78,7 @@ export default function ConsultSection() {
           <h2 className="flex w-full justify-start cursor-context-menu font-cormorant text-gray-200  hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[4rem] font-normal capitalize ">
             Guided by Specialists
           </h2>
-          <p className="flex  text-sm lg:text-[1.8rem] font-lato justify-start">
+          <p className="flex  text-sm lg:text-[1.8rem] font-lato justify-start text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
             itaque temporibus, delectus perferendis rem qui! Quos itaque
             possimus tempore deserunt, exercitationem in ea quas quasi voluptate

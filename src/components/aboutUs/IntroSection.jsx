@@ -18,7 +18,7 @@ export default function IntroSection() {
         </h2>
       </div>
       <div className="flex w-[50%] justify-center items-center">
-        <p className="text-sm lg:text-[1.8rem] px-10 m-0 font-lato ">
+        <p className="text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-justify">
           At DOW, we believe that every second counts, and choosing the right
           watch can elevate your style, personality, and special moments. Our
           store was created to provide a simple, secure, and enjoyable online
