@@ -8,7 +8,7 @@ export default function BrandSection() {
     <section>
       <div className="w-full bg-slate-900/60">
         <motion.div
-          initial={{ opacity: 0, y: 150 }}
+          initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{
@@ -62,9 +62,9 @@ export default function BrandSection() {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 150 }}
+          initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.35 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{
             duration: 3,
             type: "spring",
