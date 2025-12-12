@@ -1,9 +1,22 @@
 import CartItems from "./CartItems";
+import { motion } from "framer-motion";
 
 export default function SidebarCart({ onClick }) {
   return (
     <section>
-      <div className="fixed top-0 right-0 bottom-0 bg-slate-800 w-[20%] z-100">
+      <motion.div
+        key="sidebar"
+        initial={{ x: "100%" }}
+        animate={{ x: 0 }}
+        exit={{ x: "100%" }}
+        layout
+        transition={{
+          type: "spring",
+          stiffness: 250,
+          damping: 50,
+        }}
+        className="fixed top-0 right-0 bottom-0 bg-slate-800 w-[20%] z-100"
+      >
         <div className="absolute top-10 right-105 text-white z-100 pb-40">
           <button
             onClick={onClick}
@@ -21,12 +34,7 @@ export default function SidebarCart({ onClick }) {
         >
           <CartItems onClick={onClick} />
         </div>
-      </div>
-
-      <div
-        onClick={onClick}
-        className="fixed top-0 left-0 bottom-0 w-[80%] z-100 bg-black opacity-50 cursor-pointer"
-      ></div>
+      </motion.div>
     </section>
   );
 }

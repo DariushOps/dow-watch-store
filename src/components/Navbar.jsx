@@ -3,6 +3,7 @@ import { PiShoppingBagOpenFill } from "react-icons/pi";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import SidebarCart from "./SidebarCart";
+import { motion, AnimatePresence } from "framer-motion";
 
 function CartIcon({ count, onClick }) {
   return (
@@ -88,7 +89,9 @@ export default function Navbar() {
           </Link>
         </div>
       </nav>
-      {showCart && <SidebarCart onClick={handelShowCart} />}
+      <AnimatePresence mode="popLayout">
+        {showCart && <SidebarCart onClick={handelShowCart} />}
+      </AnimatePresence>
     </>
   );
 }

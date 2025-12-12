@@ -15,7 +15,7 @@ export default function LogIn() {
         alt="login image"
         className="w-full h-full object-cover opacity-65"
       />
-      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  bg-slate-800/40 w-[40%] h-150 rounded-2xl z-50">
+      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  bg-slate-800/40 w-[35%] h-150 rounded-2xl z-50">
         <div className="flex items-center justify-center font-cinzel text-[4rem] p-8 pb-12 ">
           <h2>Welcome, back!</h2>
         </div>
