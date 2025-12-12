@@ -1,3 +1,11 @@
+import ContactSection from "../components/contact/ContactSection";
+import FirstSection from "../components/contact/FirstSection";
+
 export default function ContactUs() {
-  return <h1>ContactUs Page</h1>;
+  return (
+    <section>
+      <FirstSection />
+      <ContactSection />
+    </section>
+  );
 }

@@ -8,7 +8,7 @@ export default function FirstSection() {
           className="
             relative flex w-full 
             h-[35vh] sm:h-[45vh] md:h-[60vh] 
-            lg:h-110      /* همون حالت قبلی، دست نمی‌زنیم */
+            lg:h-110     
             overflow-hidden 
             justify-center items-center
           "
@@ -30,7 +30,7 @@ export default function FirstSection() {
                 text-style
                 text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem]
                 font-normal text-center
-                pt-16 md:pt-24 lg:pt-24   /* large screen همون فاصله قبلی */
+                pt-16 md:pt-24 lg:pt-24 
                 font-cinzel
                 hover:scale-110 transition-transform duration-500
               "
