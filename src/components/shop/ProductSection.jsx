@@ -24,12 +24,26 @@ export default function ProductSection() {
     <section className="py-12 md:py-28 lg:py-60">
       <div className="sm:w-[85%] md:w-[95%] lg:w-[80%] mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {data.map((item) => (
-          <article
+          <motion.article
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.02 }}
+            transition={{
+              duration: 2,
+              type: "spring",
+              staggerChildren: 0.4,
+            }}
             key={item.id}
             className="bg-white rounded-md overflow-hidden flex flex-col shadow-sm"
           >
-            {/* تصویر */}
             <div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{
+                duration: 2,
+                type: "spring",
+              }}
               className="
                 relative w-full 
                 h-56 sm:h-120 md:h-150 lg:h-215
@@ -103,7 +117,7 @@ export default function ProductSection() {
                 </motion.button>
               </div>
             </div>
-          </article>
+          </motion.article>
         ))}
       </div>
     </section>
