@@ -41,7 +41,7 @@ export default function TestimonialSection() {
   };
 
   return (
-    <section className="pt-10">
+    <section className="">
       <div className="relative w-full h-140">
         <img
           src={ImgBg}
@@ -64,8 +64,10 @@ export default function TestimonialSection() {
                   exit="exit"
                   className="bg-white/10 backdrop-blur-lg p-8 rounded-xl w-1/2 text-white text-center"
                 >
-                  <p className="text-[2rem] italic">"{item.comment}"</p>
-                  <h4 className="mt-4 font-semibold text-2xl text-amber-300">
+                  <p className="text-xl sm:text-2xl md:text-[2rem] italic">
+                    "{item.comment}"
+                  </p>
+                  <h4 className="mt-4 font-semibold text-lg sm:text-xl md:text-2xl text-amber-300">
                     — {item.name}
                   </h4>
                 </motion.div>

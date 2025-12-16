@@ -26,29 +26,47 @@ export default function CoverSlideshow() {
   }, []);
 
   return (
-    <div id="hero" className="relative w-full h-screen overflow-hidden">
+    <section
+      id="hero"
+      className="
+        relative w-full lg:w-full
+        h-svh lg:h-screen
+        overflow-hidden
+      "
+    >
       {images.map((img, i) => (
         <img
           key={i}
           src={img}
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1600
-            ${i === index ? "opacity-20" : "opacity-0"}
+          alt=""
+          className={`
+            absolute inset-0 w-full h-full object-cover
+            transition-opacity duration-1600
+            ${i === index ? "opacity-25" : "opacity-0"}
           `}
         />
       ))}
 
-      <div className="absolute flex inset-0 -translate-y-[2%] justify-center items-center z-50">
+      <div
+        className="
+          absolute inset-0 z-50
+          flex items-center justify-center
+          px-4 sm:px-6
+        "
+      >
         <h1
           key={index}
           className="
-           text-style text-4xl md:text-6xl lg:text-[7rem] font-normal text-center px-6 font-cinzel
-           opacity-0
-           animate-textSlide
+            text-style font-cinzel font-normal text-center
+            opacity-0 animate-textSlide
+            text-3xl leading-tight
+            sm:text-4xl md:text-6xl
+            lg:text-[7rem]
           "
         >
           {titles[index]}
         </h1>
       </div>
-    </div>
+    </section>
   );
 }

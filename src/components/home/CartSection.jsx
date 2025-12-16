@@ -37,7 +37,7 @@ export default function CartSection() {
         </h2>
       </motion.div>
       <motion.div
-        className="flex w-[80%] justify-center mx-auto items-center gap-4 my-5"
+        className="flex  sm:w-[90%] lg:w-[80%] justify-center mx-auto items-center gap-4 my-5"
         variants={parent}
         initial="hidden"
         whileInView="show"

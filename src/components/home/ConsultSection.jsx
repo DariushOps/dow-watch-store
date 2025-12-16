@@ -31,62 +31,58 @@ export default function ConsultSection() {
   const isInView = useInView(ref, { amount: 0.4 });
 
   useEffect(() => {
-    if (isInView) {
-      controls.start("show");
-    } else {
-      controls.start("hidden");
-    }
+    if (isInView) controls.start("show");
+    else controls.start("hidden");
   }, [isInView, controls]);
 
   return (
-    <section className="py-35">
+    <section className="pt-20 md:pt-28 lg:pt-35">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
-        transition={{
-          duration: 2,
-          type: "spring",
-        }}
-        className="flex justify-center items-center pb-45"
+        transition={{ duration: 2, type: "spring" }}
+        className="flex justify-center items-center pb-16 md:pb-20 lg:pb-45"
       >
-        <h2 className="header-secondary">Consult with Experts</h2>
+        <h2 className="header-secondary text-center">Consult with Experts</h2>
       </motion.div>
+
       <motion.div
         ref={ref}
         initial="hidden"
         animate={controls}
-        className="flex w-full bg-slate-900/60 overflow-hidden"
+        className="flex flex-col lg:flex-row w-full bg-slate-900/60 overflow-hidden"
       >
         <motion.div
           variants={leftVariant}
-          className="flex w-1/2 h-180 overflow-hidden "
+          className="w-full lg:w-1/2 h-[260px] sm:h-80 md:h-[380px] lg:h-full overflow-hidden"
         >
           <img
             src={Watch}
             alt="watch"
-            className="flex h-full w-full object-cover scale-120 object-center opacity-65 hover:scale-100 transition-all duration-3000 cursor-pointer "
+            className="w-full h-full object-cover object-center scale-120 hover:scale-100 opacity-65 transition-all duration-1000 cursor-pointer"
           />
         </motion.div>
+
         <motion.div
           variants={rightVariant}
-          className="flex w-1/2 h-180 flex-col py-35 px-35 gap-8"
+          className="w-full lg:w-1/2 flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-8 py-8 sm:py-10 md:py-12 lg:py-35 px-6 sm:px-10 lg:px-35"
         >
-          <h6 className="capitalize text-xl md:text-[1.5rem] lg:text-[2rem] font-light font-lato">
+          <h6 className="capitalize text-lg sm:text-xl md:text-[1.5rem] lg:text-[2rem] font-light font-lato text-center lg:text-left">
             you can trust us
           </h6>
-          <h2 className="flex w-full justify-start cursor-context-menu font-cormorant text-gray-200  hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[4rem] font-normal capitalize ">
+          <h2 className="text-2xl sm:text-[2.2rem] md:text-[2.5rem] lg:text-[4rem] font-cormorant text-gray-200 font-normal capitalize text-center lg:text-left hover:drop-shadow-lg transition-all duration-500">
             Guided by Specialists
           </h2>
-          <p className="flex  text-sm lg:text-[1.8rem] font-lato justify-start text-justify">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-[2rem] font-lato text-center lg:text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
             itaque temporibus, delectus perferendis rem qui! Quos itaque
-            possimus tempore deserunt, exercitationem in ea quas quasi voluptate
-            .
+            possimus tempore deserunt, exercitationem in ea quas quasi
+            voluptate.
           </p>
-          <Link to="shop" className="flex justify-start items-center w-70 pt-4">
+          <Link to="shop" className="flex justify-center lg:justify-start pt-4">
             <motion.span
-              className=" flex mx-auto justify-center items-center w-70 h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.8rem] font-montserrat capitalize"
+              className="flex justify-center items-center w-50 sm:w-60 md:w-65 lg:w-70 h-13 sm:h-16 md:h-18 border-2 border-amber-500/60 text-gray-200 text-[1.4rem] sm:text-[1.6rem] lg:text-[1.8rem] font-montserrat capitalize"
               whileHover={{
                 borderRadius: "10px",
                 color: "#e5e7eb",
@@ -100,7 +96,6 @@ export default function ConsultSection() {
                 stiffness: 500,
                 damping: 100,
               }}
-              type="button"
             >
               contact us
             </motion.span>
