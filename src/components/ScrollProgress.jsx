@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { BiSolidUpArrow } from "react-icons/bi";
 
 export default function ScrollProgress() {
   const [show, setShow] = useState(false);
@@ -70,7 +71,7 @@ export default function ScrollProgress() {
         </svg>
 
         <div className="absolute w-15 h-15 rounded-full bg-slate-900 text-white text-3xl flex items-center justify-center shadow-lg cursor-pointer">
-          &#11165;
+          <BiSolidUpArrow />
         </div>
       </div>
     </button>

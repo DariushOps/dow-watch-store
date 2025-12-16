@@ -90,7 +90,10 @@ export default function Navbar() {
             Sign Up
           </Link>
         </div>
-        <div className="sm:hidden flex justify-center items-start -mt-4">
+        <div className="sm:hidden flex justify-center gap-4 items-start ">
+          <div className="-mt-1">
+            <CartIcon count={total} onClick={handelShowCart} />
+          </div>
           <button
             className="flex flex-col gap-1"
             onClick={() => setShowMenu(true)}

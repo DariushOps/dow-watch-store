@@ -59,8 +59,8 @@ export default function CoverSlideshow() {
           className="
             text-style font-cinzel font-normal text-center
             opacity-0 animate-textSlide
-            text-3xl leading-tight
-            sm:text-4xl md:text-6xl
+            text-[2.7rem] leading-tight
+            sm:text-6xl md:text-7xl
             lg:text-[7rem]
           "
         >

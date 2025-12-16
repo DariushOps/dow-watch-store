@@ -21,7 +21,7 @@ const child = {
 
 export default function CartSection() {
   return (
-    <section>
+    <section className="hidden sm:flex sm:flex-col">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export default function CartSection() {
         </h2>
       </motion.div>
       <motion.div
-        className="flex  sm:w-[90%] lg:w-[80%] justify-center mx-auto items-center gap-4 my-5"
+        className="flex sm:w-[97%] lg:w-[80%] justify-center mx-auto items-center gap-2 md:gap-4 my-5"
         variants={parent}
         initial="hidden"
         whileInView="show"
@@ -50,7 +50,7 @@ export default function CartSection() {
           <h3 className="cart-header">New Arrivals</h3>
           <img src={Omega} alt="Omega watch" className="arrival-img" />
           <div className="block absolute rounded-t-[3.5rem] h-65 bottom-0 left-0 right-0 bg-transparent backdrop-blur-sm opacity-0 group-hover:opacity-100 group-hover:translate-y-0 duration-500">
-            <p className="flex absolute bottom-43 w-full justify-center text-[1.6rem] group-hover:translate-y-0 duration-500 left-1/2 font-lato font-normal -translate-x-1/2 translate-y-10 capitalize">
+            <p className="flex absolute bottom-43 w-full justify-center text-xl md:text-[1.6rem] group-hover:translate-y-0 duration-500 left-1/2 font-lato font-normal -translate-x-1/2 translate-y-10 capitalize">
               discover the latest models
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function CartSection() {
           </h3>
           <img src={Seiko} alt="Omega watch" className="arrival-img" />
           <div className="block absolute rounded-t-[3.5rem] h-65 bottom-0 left-0 right-0 bg-transparent backdrop-blur-sm opacity-0 group-hover:opacity-100 group-hover:translate-y-0 duration-500">
-            <p className="flex absolute bottom-43 w-full justify-center text-[1.6rem] group-hover:translate-y-0 duration-500 left-1/2 font-lato font-normal -translate-x-1/2 translate-y-10 capitalize">
+            <p className="flex absolute bottom-43 w-full justify-center text-xl md:text-[1.6rem] group-hover:translate-y-0 duration-500 left-1/2 font-lato font-normal -translate-x-1/2 translate-y-10 capitalize">
               Precision in every second
             </p>
           </div>
@@ -81,7 +81,7 @@ export default function CartSection() {
           </h3>
 
           <div className="block absolute rounded-t-[3.5rem] h-65 bottom-0 left-0 right-0 bg-transparent backdrop-blur-sm opacity-0 group-hover:opacity-100 group-hover:translate-y-0 duration-500">
-            <p className="flex absolute bottom-43 w-full justify-center text-[1.6rem] group-hover:translate-y-0 duration-500 left-1/2 font-lato font-normal -translate-x-1/2 translate-y-10 capitalize">
+            <p className="flex absolute bottom-43 w-full justify-center text-xl md:text-[1.6rem] group-hover:translate-y-0 duration-500 left-1/2 font-lato font-normal -translate-x-1/2 translate-y-10 capitalize">
               Confidence, Warranty, Pro service
             </p>
           </div>
