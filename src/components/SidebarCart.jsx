@@ -15,9 +15,9 @@ export default function SidebarCart({ onClick }) {
           stiffness: 250,
           damping: 50,
         }}
-        className="fixed top-0 right-0 bottom-0 bg-slate-800 w-[20%] z-100"
+        className="fixed top-0 right-0 bottom-0 bg-slate-800 w-80 md:w-110 lg:w-120 z-100"
       >
-        <div className="absolute top-10 right-105 text-white z-100 pb-40">
+        <div className="fixed top-12 right-65 md:top-10 md:right-95 lg:right-105 text-white z-100 md:pb-40">
           <button
             onClick={onClick}
             className="relative w-8 h-2 flex items-center justify-center text-4xl cursor-pointer group"
