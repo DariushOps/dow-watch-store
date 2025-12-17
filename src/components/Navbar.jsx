@@ -123,13 +123,13 @@ export default function Navbar() {
               <NavLink className={linkClasses} to="/">
                 Home
               </NavLink>
-              <NavLink className={linkClasses} to="shop">
+              <NavLink className={linkClasses} to="/shop">
                 Shop
               </NavLink>
-              <NavLink className={linkClasses} to="about">
+              <NavLink className={linkClasses} to="/about">
                 About
               </NavLink>
-              <NavLink className={linkClasses} to="contactUs">
+              <NavLink className={linkClasses} to="/contactUs">
                 Contact Us
               </NavLink>
               <div className="absolute flex top-12 right-12 text-3xl">
