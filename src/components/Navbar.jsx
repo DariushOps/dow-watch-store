@@ -148,6 +148,13 @@ export default function Navbar() {
               >
                 Contact Us
               </NavLink>
+              <NavLink
+                className={linkClasses}
+                to="/signup"
+                onClick={() => setShowMenu(false)}
+              >
+                Sign up
+              </NavLink>
               <div className="absolute flex top-12 right-12 text-3xl">
                 <button onClick={() => setShowMenu(false)}>
                   <SiX />{" "}
