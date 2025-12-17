@@ -3,6 +3,7 @@ import Footer from "../components/home/Footer";
 import ScrollProgress from "../components/ScrollProgress";
 import Navbar from "../components/Navbar";
 import Loading from "../components/Loading";
+import ScrollToTop from "../components/ScrollToTop";
 
 const HIDE_LAYOUT = ["/login", "/signup"];
 
@@ -19,6 +20,7 @@ export default function RootLayout() {
 
   return (
     <>
+      <ScrollToTop />
       {!shouldHide && <Navbar />}
       {!shouldHide && <ScrollProgress />}
 
