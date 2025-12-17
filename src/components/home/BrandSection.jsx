@@ -109,11 +109,17 @@ export default function BrandSection() {
                 className="flex justify-center items-center w-50 sm:w-60 md:w-65 lg:w-70 h-13 sm:h-16 md:h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.4rem] sm:text-[1.6rem] lg:text-[1.8rem] font-montserrat capitalize"
                 whileHover={{
                   borderRadius: "10px",
+                  color: "#e5e7eb",
                   backgroundColor: "#fe9a0099",
                   boxShadow: "0 0 12px rgba(255,255,255,0.15)",
                 }}
                 whileTap={{ scale: 0.97 }}
-                transition={{ duration: 0.5, type: "spring" }}
+                transition={{
+                  duration: 0.5,
+                  type: "spring",
+                  stiffness: 500,
+                  damping: 100,
+                }}
               >
                 explore
               </motion.span>
@@ -163,9 +169,20 @@ export default function BrandSection() {
               className="flex mx-auto justify-center items-center w-70"
             >
               <motion.span
-                className="flex justify-center items-center w-50 sm:w-60 md:w-65 lg:w-70 h-13 sm:h-16 md:h-18 border-2 border-amber-500/60 text-gray-200 text-[1.4rem] sm:text-[1.6rem] lg:text-[1.8rem] font-montserrat capitalize"
-                whileHover={{ backgroundColor: "#fe9a0099" }}
+                className="flex justify-center items-center w-50 sm:w-60 md:w-65 lg:w-70 h-13 sm:h-16 md:h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.4rem] sm:text-[1.6rem] lg:text-[1.8rem] font-montserrat capitalize"
+                whileHover={{
+                  borderRadius: "10px",
+                  color: "#e5e7eb",
+                  backgroundColor: "#fe9a0099",
+                  boxShadow: "0 0 12px rgba(255,255,255,0.15)",
+                }}
                 whileTap={{ scale: 0.97 }}
+                transition={{
+                  duration: 0.5,
+                  type: "spring",
+                  stiffness: 500,
+                  damping: 100,
+                }}
               >
                 explore
               </motion.span>
@@ -197,7 +214,22 @@ export default function BrandSection() {
               to="shop"
               className="flex mx-auto justify-center items-center w-70"
             >
-              <motion.span className="flex justify-center items-center w-50 sm:w-60 md:w-65 lg:w-70 h-13 sm:h-16 md:h-18 border-2 border-amber-500/60 text-gray-200 text-[1.4rem] sm:text-[1.6rem] lg:text-[1.8rem] font-montserrat capitalize">
+              <motion.span
+                className="flex justify-center items-center w-50 sm:w-60 md:w-65 lg:w-70 h-13 sm:h-16 md:h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.4rem] sm:text-[1.6rem] lg:text-[1.8rem] font-montserrat capitalize"
+                whileHover={{
+                  borderRadius: "10px",
+                  color: "#e5e7eb",
+                  backgroundColor: "#fe9a0099",
+                  boxShadow: "0 0 12px rgba(255,255,255,0.15)",
+                }}
+                whileTap={{ scale: 0.97 }}
+                transition={{
+                  duration: 0.5,
+                  type: "spring",
+                  stiffness: 500,
+                  damping: 100,
+                }}
+              >
                 explore
               </motion.span>
             </Link>
