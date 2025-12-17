@@ -15,7 +15,7 @@ export default function ContactSection() {
           />
           <CustomText formInput="comment" style={{ width: "100%" }} />
 
-          <div className="flex md:w-220 sm:w-200 w-135 rounded-md h-15 md:h-18 hover:bg-emerald-700  hover:-translate-y-1 active:translate-y-1 transition-all duration-500 text-[2.2rem] font-montserrat border-2 tracking-[.5rem] border-emerald-700 hover:tracking-[1rem] mt-14 justify-center items-center">
+          <div className="flex md:w-220 sm:w-200 w-135 rounded-md h-15 md:h-18 hover:bg-emerald-700  hover:-translate-y-1 active:translate-y-1 transition-all duration-500 text-[2rem] md:text-[2.2rem] font-montserrat border-2 tracking-[.5rem] border-emerald-700 hover:tracking-[1rem] mt-14 justify-center items-center">
             <button
               type="button"
               className="flex uppercase md:w-270 sm:w-200 w-135 h-18 justify-center items-center cursor-pointer"

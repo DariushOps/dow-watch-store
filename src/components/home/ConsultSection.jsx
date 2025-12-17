@@ -80,7 +80,10 @@ export default function ConsultSection() {
             possimus tempore deserunt, exercitationem in ea quas quasi
             voluptate.
           </p>
-          <Link to="shop" className="flex justify-center lg:justify-start pt-4">
+          <Link
+            to="/contactus"
+            className="flex justify-center lg:justify-start pt-4"
+          >
             <motion.span
               className="flex justify-center items-center w-50 sm:w-60 md:w-65 lg:w-70 h-13 sm:h-16 md:h-18 border-2 border-amber-500/60 text-gray-200 text-[1.4rem] sm:text-[1.6rem] lg:text-[1.8rem] font-montserrat capitalize"
               whileHover={{

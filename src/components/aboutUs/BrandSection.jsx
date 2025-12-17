@@ -1,4 +1,4 @@
-import Rolex from "../../assets/watchPic/28.webp";
+import Rolex from "../../assets/watchPic/28.jpg";
 import Img from "../../assets/watchPic/2.webp";
 
 import { Link } from "react-router-dom";
@@ -10,25 +10,31 @@ export default function BrandSection() {
         <motion.div
           initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{
-            duration: 3,
+            duration: 4,
             type: "spring",
           }}
-          className="flex gap-0 h-180 items-center justify-center w-full overflow-hidden"
+          className="flex flex-col lg:flex-row h-auto lg:h-180 items-center justify-center w-full overflow-hidden"
         >
-          <div className="flex w-[50%] group overflow-hidden">
+          <div className="flex w-full lg:w-[50%] group overflow-hidden">
             <img
-              src={Rolex}
+              src={Img}
               alt="Watch pic"
-              className="h-full w-full object-cover scale-105 object-center opacity-85 hover:opacity-60 hover:scale-100 transition-all duration-600 cursor-pointer "
+              className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-full object-cover scale-105 hover:scale-100 opacity-80 hover:opacity-60 transition-all duration-600 cursor-pointer"
             />
           </div>
-          <div className="flex w-[50%] px-10 flex-col gap-12 ">
-            <h2 className="block w-[70%]  cursor-context-menu ml-8 font-cormorant text-gray-200 hover:text-amber-500  hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[4rem] font-light uppercase">
+          <div className="flex w-full lg:w-[50%] px-8 py-8 md:px-10 md:py-12 lg:px-23 flex-col gap-12 md:gap-14 lg:gap-16">
+            <h2 className="block w-full lg:w-[75%] text-center lg:text-start mx-auto lg:mx-0 cursor-context-menu font-cormorant text-gray-200 hover:text-amber-500  hover:drop-shadow-lg transition-all transform-gpu duration-500 text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-light uppercase">
               Time Refined by DOW
             </h2>
-            <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-justify">
+            <p
+              className="font-lato text-center lg:text-justify
+                text-[1.15rem] sm:text-[1.3rem] md:text-[1.5rem] lg:text-[1.8rem]
+                leading-[1.95] lg:leading-normal
+                max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-none
+                mx-auto"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Asperiores itaque temporibus, delectus perferendis rem qui! Quos
               itaque possimus tempore deserunt, exercitationem in ea quas quasi
@@ -36,11 +42,11 @@ export default function BrandSection() {
               amet, consectetur adipisicing elit. Aperiam pariatur enim eius id
             </p>
             <Link
-              to="shop"
-              className="flex justify-start items-center px-10 w-90"
+              to="/shop"
+              className="flex mx-auto lg:mx-0 justify-center lg:justify-start items-center w-70"
             >
               <motion.span
-                className=" flex justify-center items-center w-70 h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.8rem] font-montserrat capitalize"
+                className="flex justify-center  items-center w-50 sm:w-60 md:w-65 lg:w-70 h-13 sm:h-16 md:h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.4rem] sm:text-[1.6rem] lg:text-[1.8rem] font-montserrat capitalize"
                 whileHover={{
                   borderRadius: "10px",
                   color: "#e5e7eb",
@@ -69,13 +75,13 @@ export default function BrandSection() {
             duration: 3,
             type: "spring",
           }}
-          className="flex gap-0 h-180 items-center justify-center w-full overflow-hidden"
+          className="flex flex-col-reverse lg:flex-row h-auto lg:h-180 items-center justify-center w-full overflow-hidden"
         >
-          <div className="flex w-[50%] px-10 flex-col gap-12 ">
-            <h2 className="block w-[70%] -ml-15  cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500  hover:drop-shadow-lg transition-all transform-gpu duration-500 text-2xl md:text-[2rem] lg:text-[4.5rem] font-light uppercase">
+          <div className="flex w-full lg:w-[50%] px-8 py-8 md:px-10 md:py-12 lg:px-23 flex-col gap-12 md:gap-14 lg:gap-16">
+            <h2 className="block w-full text-center lg:text-start lg:w-[60%] mx-auto lg:mx-0 cursor-context-menu  font-cormorant text-gray-200 hover:text-amber-500 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-light uppercase">
               Timeless by DOW
             </h2>
-            <p className=" text-sm lg:text-[1.8rem] px-10 m-0 font-lato text-justify">
+            <p className="font-lato text-center lg:text-justify  text-[1.15rem] sm:text-[1.3rem] md:text-[1.5rem] lg:text-[1.8rem] leading-[1.95] lg:leading-normal max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-none mx-auto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Asperiores itaque temporibus, delectus perferendis rem qui! Quos
               itaque possimus tempore deserunt, exercitationem in ea quas quasi
@@ -83,11 +89,11 @@ export default function BrandSection() {
               amet, consectetur adipisicing elit. Aperiam pariatur enim eius id
             </p>
             <Link
-              to="shop"
-              className="flex justify-start items-center px-10 w-90"
+              to="/shop"
+              className="flex mx-auto lg:mx-0 justify-center lg:justify-start items-center w-70"
             >
               <motion.span
-                className=" flex justify-center items-center w-70 h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.8rem] font-montserrat capitalize"
+                className="flex justify-center items-center w-50 sm:w-60 md:w-65 lg:w-70 h-13 sm:h-16 md:h-18 bg-transparent border-2 border-amber-500/60 text-gray-200 text-[1.4rem] sm:text-[1.6rem] lg:text-[1.8rem] font-montserrat capitalize"
                 whileHover={{
                   borderRadius: "10px",
                   color: "#e5e7eb",
@@ -107,11 +113,11 @@ export default function BrandSection() {
               </motion.span>
             </Link>
           </div>
-          <div className="flex w-[50%] group overflow-hidden">
+          <div className="flex w-full lg:w-[50%] group overflow-hidden">
             <img
-              src={Img}
+              src={Rolex}
               alt="Watch pic"
-              className="h-full w-full object-cover scale-105 object-center opacity-85 hover:opacity-60 hover:scale-100 transition-all duration-600 cursor-pointer "
+              className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-full object-cover object-center scale-105 hover:scale-100 opacity-80 hover:opacity-60 transition-all duration-600 cursor-pointer"
             />
           </div>
         </motion.div>

@@ -9,7 +9,6 @@ export default function BrandSection() {
   return (
     <section>
       <div className="w-full bg-slate-900/60">
-        {/* ================= Rolex ================= */}
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +16,6 @@ export default function BrandSection() {
           transition={{ duration: 2, type: "spring" }}
           className="flex flex-col lg:flex-row h-auto lg:h-180 items-center justify-center w-full overflow-hidden"
         >
-          {/* Image */}
           <div className="flex w-full lg:w-[50%] group overflow-hidden">
             <img
               src={Rolex}
@@ -35,7 +33,6 @@ export default function BrandSection() {
             />
           </div>
 
-          {/* Content */}
           <div className="flex w-full lg:w-[50%] px-8 py-8 md:px-10 md:py-12 lg:px-20 flex-col gap-12 md:gap-14 lg:gap-16">
             <h2 className="block w-full lg:w-[30%] mx-auto cursor-context-menu text-center font-cormorant text-gray-200 hover:text-amber-500 hover:scale-115 hover:drop-shadow-lg transition-all transform-gpu duration-500 text-[2.5rem] md:text-[3.5rem] lg:text-[5.2rem] font-light uppercase">
               Rolex
@@ -57,7 +54,7 @@ export default function BrandSection() {
             </p>
 
             <Link
-              to="shop"
+              to="/shop"
               className="flex mx-auto justify-center items-center w-70"
             >
               <motion.span
@@ -82,7 +79,6 @@ export default function BrandSection() {
           </div>
         </motion.div>
 
-        {/* ================= Omega ================= */}
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -133,7 +129,6 @@ export default function BrandSection() {
           </div>
         </motion.div>
 
-        {/* ================= Seiko ================= */}
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -178,7 +173,6 @@ export default function BrandSection() {
           </div>
         </motion.div>
 
-        {/* ================= Breitling ================= */}
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
