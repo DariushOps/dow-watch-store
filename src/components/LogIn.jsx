@@ -1,5 +1,6 @@
 import { useState } from "react";
 import LoginImg from "../assets/watchPic/login.jpg";
+import { Link } from "react-router-dom";
 
 export default function LogIn() {
   const [value, setValue] = useState({
@@ -15,8 +16,8 @@ export default function LogIn() {
         alt="login image"
         className="w-full h-full object-cover opacity-65"
       />
-      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  bg-slate-800/40 w-[35%] h-150 rounded-2xl z-50">
-        <div className="flex items-center justify-center font-cinzel text-[4rem] p-8 pb-12 ">
+      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  bg-slate-800/60 w-[30%] h-150 rounded-2xl z-50">
+        <div className="flex items-center justify-center font-cinzel text-[3rem] p-8 pb-12 ">
           <h2>Welcome, back!</h2>
         </div>
         <div className="w-full px-10 flex justify-center">
@@ -32,8 +33,8 @@ export default function LogIn() {
                 required
                 id="username"
                 name="username"
-                className=" w-175 h-18 px-4 bg-slate-700/40 border-b-2 border-transparent
-                           focus:border-b-2 focus:border-amber-600 rounded-sm  transition-all duration-500 focus:outline-0 placeholder:text-2xl placeholder:font-cinzel font-cormorant text-3xl capitalize"
+                className=" w-160 h-18 px-4 bg-slate-700/40 border-b-2 border-transparent
+                           focus:border-b-2 focus:border-amber-600 rounded-2xl  transition-all duration-500 focus:outline-0 placeholder:text-2xl placeholder:font-cinzel font-cormorant text-3xl capitalize"
                 placeholder="UserNAme"
               />
               <label
@@ -60,8 +61,8 @@ export default function LogIn() {
                 required
                 id="pass"
                 name="pass"
-                className=" w-175 h-18 px-4 bg-slate-700/40 border-b-2 border-transparent
-                           focus:border-b-2 focus:border-amber-600 rounded-sm  transition-all duration-500 focus:outline-0 placeholder:text-2xl placeholder:font-cinzel font-cormorant text-3xl capitalize"
+                className=" w-160 h-18 px-4 bg-slate-700/40 border-b-2 border-transparent
+                           focus:border-b-2 focus:border-amber-600 rounded-2xl  transition-all duration-500 focus:outline-0 placeholder:text-2xl placeholder:font-cinzel font-cormorant text-3xl capitalize"
                 placeholder="Password"
               />
               <label
@@ -75,13 +76,23 @@ export default function LogIn() {
                 password
               </label>
             </div>
-            <div className="flex justify-center mx-auto gap-10 w-175">
-              <button className="flex w-85 justify-center hover:bg-amber-600  hover:-translate-y-1 active:translate-y-1 transition-all duration-500 border-2 tracking-[.1rem] hover:tracking-[.3rem] border-amber-600  h-18 items-center rounded-md font-montserrat uppercase text-3xl cursor-pointer">
-                signup
-              </button>
-              <button className="flex w-85 justify-center hover:bg-emerald-700  hover:-translate-y-1 active:translate-y-1 transition-all duration-500  tracking-[.1rem] hover:tracking-[.3rem] bg-emerald-800 h-18 items-center rounded-md font-montserrat uppercase text-3xl cursor-pointer">
+            <div className="flex flex-col gap-3 justify-center mx-auto  w-160">
+              <button
+                className="flex w-full justify-center hover:bg-emerald-600/90  hover:-translate-y-1 active:translate-y-1 transition-all duration-500  tracking-[.1rem] hover:tracking-[.3rem] bg-emerald-700 h-18 items-center rounded-2xl font-montserrat uppercase text-3xl cursor-pointer"
+                type="button"
+              >
                 login
               </button>
+              <div className="flex justify-center items-center  text-[1.4rem] font-lato font-medium">
+                <p>
+                  Don't have an account?{"  "}
+                  <Link to="/signup">
+                    <span className="font-semibold capitalize hover:text-amber-500 transition-colors duration-300">
+                      {"  "}Sign up
+                    </span>
+                  </Link>
+                </p>
+              </div>
             </div>
           </form>
         </div>
