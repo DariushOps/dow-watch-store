@@ -7,7 +7,7 @@ export default function ErrorPage() {
         <p class="text-[5rem] font-semibold text-amber-600 font-montserrat">
           404
         </p>
-        <h1 class="mt-4 font-medium tracking-tight text-[4rem] font-cinzel capitalize text-white sm:text-[6rem]">
+        <h1 class="mt-4 font-medium tracking-tight text-[3rem] font-cinzel capitalize text-white sm:text-[6rem]">
           Page not found
         </h1>
         <p class="mt-6 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
