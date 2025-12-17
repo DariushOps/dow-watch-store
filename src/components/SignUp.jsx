@@ -16,7 +16,7 @@ export default function SignUp() {
         alt="login image"
         className="w-full h-full object-cover opacity-65"
       />
-      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  bg-slate-800/60 w-[90%] sm:w-[40%] md:w-[30%]h-205 rounded-2xl z-50">
+      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  bg-slate-800/60 w-[90%] sm:w-[40%] md:w-[30%] h-205 rounded-2xl z-50">
         <div className="flex items-center justify-center font-cinzel text-[3rem] p-8 ">
           <h2>Welcome!</h2>
         </div>
