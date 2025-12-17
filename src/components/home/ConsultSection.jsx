@@ -60,7 +60,7 @@ export default function ConsultSection() {
           <img
             src={Watch}
             alt="watch"
-            className="w-full h-full object-cover object-center scale-120 hover:scale-100 opacity-65 transition-all duration-1000 cursor-pointer"
+            className="w-full h-full object-cover object-center scale-120 hover:scale-100 opacity-65 transition-all duration-4000 cursor-pointer"
           />
         </motion.div>
 
