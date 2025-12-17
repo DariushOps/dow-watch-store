@@ -22,7 +22,8 @@ export default function CustomInput({
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
         className={`
-                w-270 h-17 px-5
+          w-135 sm:w-200 h-14
+                md:w-270 md:h-17 px-5
                 border border-amber-50 rounded-sm
                 bg-transparent
                 text-white text-3xl font-medium font-cormorant capitalize
@@ -45,7 +46,7 @@ export default function CustomInput({
                     ? `${move || "-top-4 left-4"} text-[1.3rem]
                        ${bg || "bg-slate-950"}
                        px-1 text-amber-400`
-                    : "top-5  left-4  text-[1.5rem]"
+                    : "md:top-5 top-3  left-4  text-[1.5rem]"
                 }
               `}
       >
