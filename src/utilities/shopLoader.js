@@ -16,9 +16,9 @@ export async function shopLoader() {
       throw new Error("JSONBin data not found or invalid response.");
     }
 
-    return res.data.record; // فقط داده واقعی
+    return res.data.record;
   } catch (err) {
     console.error("Error fetching JSONBin data:", err);
-    throw err; // پرتاب می‌کنیم تا errorElement کار کند
+    throw err;
   }
 }

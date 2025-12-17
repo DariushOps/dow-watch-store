@@ -8,24 +8,29 @@ A modern React application for browsing luxury watches, exploring featured brand
 
 - Browse watches with detailed descriptions and prices
 - Explore featured brands with interactive cards
-- Hero slider for showcasing promotions and highlights
+- Hero slider for promotions and highlights
 - Testimonials section for customer reviews
 - Consult with Experts section
 - Fully responsive design for desktop, tablet, and mobile
+- Add, remove, and manage items in a shopping cart
+- Dynamic cart state managed with **Redux Toolkit**
+- Fetch product data from a remote API using **Axios**
 - Modular React components for easy customization
+- Smooth animations with **Framer Motion**
 - Ready for deployment on Vercel or Netlify
 
 ---
 
 ## Tech Stack
 
-- React (Vite)
+- React 19+
+- Vite
 - Tailwind CSS
-- Context API & useReducer (optional for global state)
-- Custom Hooks for utilities
-- Framer Motion for smooth animations
-- React Icons for iconography
-- React Router v6 (optional for multi-page navigation)
+- Axios (data fetching)
+- Redux Toolkit (cart management)
+- Framer Motion (animations)
+- React Router v6
+- Custom React Hooks
 
 ---
 
