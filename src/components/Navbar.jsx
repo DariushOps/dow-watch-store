@@ -120,16 +120,32 @@ export default function Navbar() {
               }}
               className="fixed w-full flex-col gap-10 text-4xl font-montserrat uppercase h-screen flex items-center justify-center bg-slate-900 z-100"
             >
-              <NavLink className={linkClasses} to="/">
+              <NavLink
+                className={linkClasses}
+                to="/"
+                onClick={() => setShowMenu(false)}
+              >
                 Home
               </NavLink>
-              <NavLink className={linkClasses} to="/shop">
+              <NavLink
+                className={linkClasses}
+                to="/shop"
+                onClick={() => setShowMenu(false)}
+              >
                 Shop
               </NavLink>
-              <NavLink className={linkClasses} to="/about">
+              <NavLink
+                className={linkClasses}
+                to="/about"
+                onClick={() => setShowMenu(false)}
+              >
                 About
               </NavLink>
-              <NavLink className={linkClasses} to="/contactUs">
+              <NavLink
+                className={linkClasses}
+                to="/contactUs"
+                onClick={() => setShowMenu(false)}
+              >
                 Contact Us
               </NavLink>
               <div className="absolute flex top-12 right-12 text-3xl">
