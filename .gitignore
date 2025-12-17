@@ -7,6 +7,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+text.txt
+data.json
+
 node_modules
 dist
 dist-ssr
@@ -14,8 +17,7 @@ dist-ssr
 
 .vscode
 
-text.txt
-data.json
+
 
 # Editor directories and files
 .vscode/*
