@@ -16,7 +16,7 @@ export default function LogIn() {
         alt="login image"
         className="w-full h-full object-cover opacity-65"
       />
-      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  bg-slate-800/60 w-[30%] h-150 rounded-2xl z-50">
+      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  bg-slate-800/60 w-[90%] lg:w-[30%]  h-150 rounded-2xl z-50">
         <div className="flex items-center justify-center font-cinzel text-[3rem] p-8 pb-12 ">
           <h2>Welcome, back!</h2>
         </div>
@@ -33,7 +33,7 @@ export default function LogIn() {
                 required
                 id="username"
                 name="username"
-                className=" w-160 h-18 px-4 bg-slate-700/40 border-b-2 border-transparent
+                className=" w-135 h-18 px-4 bg-slate-700/40 border-b-2 border-transparent
                            focus:border-b-2 focus:border-amber-600 rounded-2xl  transition-all duration-500 focus:outline-0 placeholder:text-2xl placeholder:font-cinzel font-cormorant text-3xl capitalize"
                 placeholder="UserNAme"
               />
@@ -61,7 +61,7 @@ export default function LogIn() {
                 required
                 id="pass"
                 name="pass"
-                className=" w-160 h-18 px-4 bg-slate-700/40 border-b-2 border-transparent
+                className=" w-135 h-18 px-4 bg-slate-700/40 border-b-2 border-transparent
                            focus:border-b-2 focus:border-amber-600 rounded-2xl  transition-all duration-500 focus:outline-0 placeholder:text-2xl placeholder:font-cinzel font-cormorant text-3xl capitalize"
                 placeholder="Password"
               />
@@ -76,7 +76,7 @@ export default function LogIn() {
                 password
               </label>
             </div>
-            <div className="flex flex-col gap-3 justify-center mx-auto  w-160">
+            <div className="flex flex-col gap-3 justify-center mx-auto  w-135">
               <button
                 className="flex w-full justify-center hover:bg-emerald-600/90  hover:-translate-y-1 active:translate-y-1 transition-all duration-500  tracking-[.1rem] hover:tracking-[.3rem] bg-emerald-700 h-18 items-center rounded-2xl font-montserrat uppercase text-3xl cursor-pointer"
                 type="button"
