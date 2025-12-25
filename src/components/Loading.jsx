@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 export default function Loading() {
@@ -21,8 +20,6 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* پس‌زمینه یا هر چی خواستی هم می‌تونی همینجا بزاری */
 
   #h2 {
     color: white;
